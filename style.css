@@ -231,6 +231,7 @@ p{
     /*nentuin row*/
     .row{
         flex-direction: row;
+       
     }
 
     .row .col{
@@ -242,9 +243,14 @@ p{
         max-width: 90%;
     }
 
+    .col h4{
+        color: white;
+    }
     .footer{
         padding: 10px;
     }
+
+
 
 }
 
