@@ -13,6 +13,19 @@
         <!--CSS-->
         <link rel="stylesheet" href="./style.css">
 
+        <!--getURL-->
+        <script>
+            function getParameter(ParameterName)
+            {
+                let paramater = new URLSearchParams(window.location.search);
+                return paramater.get(ParameterName);
+            }
+
+        </script>
+
+
+
+
     </head>
 
     <body>
@@ -116,7 +129,37 @@
             menuBtn.addEventListener('click',()=>{
                 navlinks.classList.toggle('mobile-menu')
             })
+
+            /*cara pake search param
+            const myURL = new URL('https://www.youtube.com/');
+            myURL.hostname = 'google.com';
+           // myURL.search = "?name=albert&ID=8888";
+            myURL.searchParams.set("Name","Albert");
+            myURL.searchParams.set("ContractID","0002131204123");*/
+
+           /* const myURL = new URL(window.location.href);
+            console.log(myURL.searchParams.get("name"));*/
+
+            const myURL = new URL('http://127.0.0.1:5500/index.html');
+
+            myURL.searchParams.set("Name","Albert");
+            myURL.searchParams.set("ContractID","0002131204123");
+
+            fetch(myURL).then(function(response)
+                {
+                return response.text();
+                }).then(function(text){
+                    console.log(text);
+                });
+
+            
+            
+            console.log(myURL);
+            console.log(myURL.toString());
         </script>
+
+
+
 
 
     </body>
