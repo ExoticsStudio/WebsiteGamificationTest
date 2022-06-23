@@ -12,6 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
         <!--CSS-->
         <link rel="stylesheet" href="./style.css">
+        <link rel="javascript" href="./script.js">
 
         <!--getURL-->
         <script>
@@ -140,7 +141,8 @@
            /* const myURL = new URL(window.location.href);
             console.log(myURL.searchParams.get("name"));*/
 
-            const myURL = new URL('http://127.0.0.1:5500/index.html');
+           /* KEPAKE NI BOS 
+           const myURL = new URL('http://127.0.0.1:5500/index.html');
 
             myURL.searchParams.set("Name","Albert");
             myURL.searchParams.set("ContractID","0002131204123");
@@ -150,12 +152,36 @@
                 return response.text();
                 }).then(function(text){
                     console.log(text);
-                });
+                });*/
 
-            
+            /*fetch('https://wsdl.maybankfinance.co.id:8282/api/BackToWork_Main/BackToWork/GetTop_10_Highscore')
+            .then(res => res.json())
+            .then(data => console.log(data))
             
             console.log(myURL);
-            console.log(myURL.toString());
+            console.log(myURL.toString());*/
+
+           const data = { };
+
+           fetch('https://wsdl.maybankfinance.co.id:8282/api/BackToWork_Main/BackToWork/GetTop_10_Highscore', 
+                    {
+                        method: 'POST', 
+                        headers: {
+                                    'Content-Type': 'application/json',
+                                    'X-Auth-Token':'6GfwBwJcYNtfldKkjScCy2GQJuL6ZAnjFC8KIKa0',
+                                 },
+                        body: JSON.stringify(data),
+                        mode:"cors",
+                        cache:"default",
+                    }
+                )
+
+                .then(response => response.json())
+                .then(data => {console.log('Success:', data);})
+                .catch((error) => {console.error('Error:', error);});
+            
+
+
         </script>
 
 
