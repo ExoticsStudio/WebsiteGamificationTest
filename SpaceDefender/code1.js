@@ -73,7 +73,7 @@ gdjs.InputContractIDCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseBut
 }if ( gdjs.InputContractIDCode.condition1IsTrue_0.val ) {
 {
 {gdjs.InputContractIDCode.conditionTrue_1 = gdjs.InputContractIDCode.condition2IsTrue_0;
-gdjs.InputContractIDCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10888628);
+gdjs.InputContractIDCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10913324);
 }
 }}
 }

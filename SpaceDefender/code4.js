@@ -270,7 +270,7 @@ gdjs.WarCode.condition7IsTrue_1 = {val:false};
 
 
 gdjs.WarCode.mapOfGDgdjs_46WarCode_46GDBackgroundObjects1Objects = Hashtable.newFrom({"Background": gdjs.WarCode.GDBackgroundObjects1});
-gdjs.WarCode.asyncCallback10941412 = function (runtimeScene, asyncObjectsList) {
+gdjs.WarCode.asyncCallback10966108 = function (runtimeScene, asyncObjectsList) {
 {gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getVariables().get("Game_Start"), true);
 }}
 gdjs.WarCode.eventsList0 = function(runtimeScene) {
@@ -281,7 +281,7 @@ gdjs.WarCode.eventsList0 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), (runtimeScene) => (gdjs.WarCode.asyncCallback10941412(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), (runtimeScene) => (gdjs.WarCode.asyncCallback10966108(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -300,7 +300,7 @@ gdjs.WarCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(r
 }if ( gdjs.WarCode.condition0IsTrue_0.val ) {
 {
 {gdjs.WarCode.conditionTrue_1 = gdjs.WarCode.condition1IsTrue_0;
-gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10939276);
+gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10963972);
 }
 }}
 if (gdjs.WarCode.condition1IsTrue_0.val) {
@@ -394,7 +394,7 @@ gdjs.WarCode.condition3IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(r
 }if ( gdjs.WarCode.condition3IsTrue_0.val ) {
 {
 {gdjs.WarCode.conditionTrue_1 = gdjs.WarCode.condition4IsTrue_0;
-gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10946780);
+gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10971476);
 }
 }}
 }
@@ -693,7 +693,7 @@ gdjs.WarCode.eventsList8 = function(runtimeScene) {
 gdjs.WarCode.condition0IsTrue_0.val = false;
 {
 {gdjs.WarCode.conditionTrue_1 = gdjs.WarCode.condition0IsTrue_0;
-gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10960732);
+gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10985428);
 }
 }if (gdjs.WarCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("ProgressBar"), gdjs.WarCode.GDProgressBarObjects3);
@@ -733,7 +733,7 @@ gdjs.WarCode.eventsList9 = function(runtimeScene) {
 gdjs.WarCode.condition0IsTrue_0.val = false;
 {
 {gdjs.WarCode.conditionTrue_1 = gdjs.WarCode.condition0IsTrue_0;
-gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10965468);
+gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10990164);
 }
 }if (gdjs.WarCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("ProgressBar"), gdjs.WarCode.GDProgressBarObjects3);
@@ -773,7 +773,7 @@ gdjs.WarCode.eventsList10 = function(runtimeScene) {
 gdjs.WarCode.condition0IsTrue_0.val = false;
 {
 {gdjs.WarCode.conditionTrue_1 = gdjs.WarCode.condition0IsTrue_0;
-gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10969580);
+gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10994276);
 }
 }if (gdjs.WarCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("ProgressBar"), gdjs.WarCode.GDProgressBarObjects3);
@@ -822,7 +822,7 @@ gdjs.WarCode.eventsList11 = function(runtimeScene) {
 gdjs.WarCode.condition0IsTrue_0.val = false;
 {
 {gdjs.WarCode.conditionTrue_1 = gdjs.WarCode.condition0IsTrue_0;
-gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10974028);
+gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10998724);
 }
 }if (gdjs.WarCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("ProgressBar"), gdjs.WarCode.GDProgressBarObjects2);
@@ -1023,7 +1023,7 @@ gdjs.WarCode.eventsList13 = function(runtimeScene) {
 gdjs.WarCode.condition0IsTrue_0.val = false;
 {
 {gdjs.WarCode.conditionTrue_1 = gdjs.WarCode.condition0IsTrue_0;
-gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10978996);
+gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11003692);
 }
 }if (gdjs.WarCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("ProgressBar"), gdjs.WarCode.GDProgressBarObjects3);
@@ -1063,7 +1063,7 @@ gdjs.WarCode.eventsList14 = function(runtimeScene) {
 gdjs.WarCode.condition0IsTrue_0.val = false;
 {
 {gdjs.WarCode.conditionTrue_1 = gdjs.WarCode.condition0IsTrue_0;
-gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10983444);
+gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11008140);
 }
 }if (gdjs.WarCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("ProgressBar"), gdjs.WarCode.GDProgressBarObjects3);
@@ -1103,7 +1103,7 @@ gdjs.WarCode.eventsList15 = function(runtimeScene) {
 gdjs.WarCode.condition0IsTrue_0.val = false;
 {
 {gdjs.WarCode.conditionTrue_1 = gdjs.WarCode.condition0IsTrue_0;
-gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10987980);
+gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11012676);
 }
 }if (gdjs.WarCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("ProgressBar"), gdjs.WarCode.GDProgressBarObjects3);
@@ -1143,7 +1143,7 @@ gdjs.WarCode.eventsList16 = function(runtimeScene) {
 gdjs.WarCode.condition0IsTrue_0.val = false;
 {
 {gdjs.WarCode.conditionTrue_1 = gdjs.WarCode.condition0IsTrue_0;
-gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10992340);
+gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11017036);
 }
 }if (gdjs.WarCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("ProgressBar"), gdjs.WarCode.GDProgressBarObjects3);
@@ -1387,7 +1387,7 @@ gdjs.WarCode.eventsList18 = function(runtimeScene) {
 gdjs.WarCode.condition0IsTrue_0.val = false;
 {
 {gdjs.WarCode.conditionTrue_1 = gdjs.WarCode.condition0IsTrue_0;
-gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10998180);
+gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11022876);
 }
 }if (gdjs.WarCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("ProgressBar"), gdjs.WarCode.GDProgressBarObjects3);
@@ -1427,7 +1427,7 @@ gdjs.WarCode.eventsList19 = function(runtimeScene) {
 gdjs.WarCode.condition0IsTrue_0.val = false;
 {
 {gdjs.WarCode.conditionTrue_1 = gdjs.WarCode.condition0IsTrue_0;
-gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11003268);
+gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11027964);
 }
 }if (gdjs.WarCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("ProgressBar"), gdjs.WarCode.GDProgressBarObjects3);
@@ -1467,7 +1467,7 @@ gdjs.WarCode.eventsList20 = function(runtimeScene) {
 gdjs.WarCode.condition0IsTrue_0.val = false;
 {
 {gdjs.WarCode.conditionTrue_1 = gdjs.WarCode.condition0IsTrue_0;
-gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11007804);
+gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11032500);
 }
 }if (gdjs.WarCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("ProgressBar"), gdjs.WarCode.GDProgressBarObjects3);
@@ -1507,7 +1507,7 @@ gdjs.WarCode.eventsList21 = function(runtimeScene) {
 gdjs.WarCode.condition0IsTrue_0.val = false;
 {
 {gdjs.WarCode.conditionTrue_1 = gdjs.WarCode.condition0IsTrue_0;
-gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11012228);
+gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11036924);
 }
 }if (gdjs.WarCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("ProgressBar"), gdjs.WarCode.GDProgressBarObjects3);
@@ -1996,7 +1996,7 @@ gdjs.WarCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(r
 }if ( gdjs.WarCode.condition0IsTrue_0.val ) {
 {
 {gdjs.WarCode.conditionTrue_1 = gdjs.WarCode.condition1IsTrue_0;
-gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11045332);
+gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11070028);
 }
 }}
 if (gdjs.WarCode.condition1IsTrue_0.val) {
@@ -2843,7 +2843,7 @@ gdjs.WarCode.condition5IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(r
 }if ( gdjs.WarCode.condition5IsTrue_0.val ) {
 {
 {gdjs.WarCode.conditionTrue_1 = gdjs.WarCode.condition6IsTrue_0;
-gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11089460);
+gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11114156);
 }
 }}
 }
@@ -3175,7 +3175,7 @@ gdjs.WarCode.condition5IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(r
 }if ( gdjs.WarCode.condition5IsTrue_0.val ) {
 {
 {gdjs.WarCode.conditionTrue_1 = gdjs.WarCode.condition6IsTrue_0;
-gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11107388);
+gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11132084);
 }
 }}
 }
@@ -3553,7 +3553,7 @@ gdjs.WarCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins
 }if ( gdjs.WarCode.condition0IsTrue_0.val ) {
 {
 {gdjs.WarCode.conditionTrue_1 = gdjs.WarCode.condition1IsTrue_0;
-gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10933884);
+gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10958580);
 }
 }}
 if (gdjs.WarCode.condition1IsTrue_0.val) {
@@ -3841,7 +3841,7 @@ gdjs.WarCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPressed(r
 }if ( gdjs.WarCode.condition1IsTrue_0.val ) {
 {
 {gdjs.WarCode.conditionTrue_1 = gdjs.WarCode.condition2IsTrue_0;
-gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11035548);
+gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11060244);
 }
 }}
 }
