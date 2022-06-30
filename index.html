@@ -13,6 +13,7 @@
         <!--CSS-->
         <link rel="stylesheet" href="./style.css">
         <link rel="javascript" href="./script.js">
+        <link rel="shortcut icon" type="x-icon" href="./img/Icon.png">
 
         <!--getURL-->
         <script>
@@ -58,14 +59,13 @@
         <!--EVENTS-->
         <section class="events">
             <div class="title">
-                <h1>TRY VARIOUS EXCITING GAMES</h1>
+                <h1>Our Games</h1>
                 <div class="line"></div>   
             </div>
 <!--Baris 1-->
             <div class="row">
                 <div class="col">
                     <a href="./TigerCross/index.html" class="col"><img src="./img/TigerCross.png" alt=""></a>
-                    
                     <h4>Tiger Cross</h4>
                     <!--<p>belum ada ide kalimat guys wkwkwbelum ada ide kalimat guys wkwkw</p>-->
                      
@@ -82,7 +82,7 @@
             <div class="row">
                 <div class="col">
                     <a href="./SpaceDefender/index.html" class="col"><img src="./img/SpaceDefender.png" alt=""></a>
-                    <h4>SPACE DEFENDER TESTING BACA URL </h4>
+                    <h4>SPACE DEFENDER</h4>
                     <!--<p>belum ada ide kalimat guys wkwkwbelum ada ide kalimat guys wkwkw</p>-->
                      <!--<a href="#" class="ctn">PLAY SAVE OUR SEA</a>-->
                 </div>
@@ -97,14 +97,14 @@
 <!--Baris 3-->
             <div class="row">
                 <div class="col">
-                    <a href="https://www.youtube.com" class="col"><img src="./img/SpaceDefender.png" alt=""></a>
+                    <a href="./LeasingFrenzy/index.html" class="col"><img src="./img/LeasingFrenzy.png" alt=""></a>
                     <h4>LEASING FRENZY</h4>
                     <!--<p>belum ada ide kalimat guys wkwkwbelum ada ide kalimat guys wkwkw</p>-->
                      <!--<a href="#" class="ctn">PLAY SAVE OUR SEA</a>-->
                 </div>
 
                 <div class="col">
-                    <a href="https://www.youtube.com" class="col"><img src="./img/SpaceDefender.png" alt=""></a>
+                    <a href="./KangParkir/index.html" class="col"><img src="./img/KangParkir.png" alt=""></a>
                     <h4>KANG PARKIR</h4>
                     <!--<p>belum ada ide kalimat guys wkwkwbelum ada ide kalimat guys wkwkw</p>-->
                      <!--<a href="#" class="ctn">PLAY SAVE OUR SEA</a>-->
@@ -124,6 +124,8 @@
 
         <!----SCRIPT JS-->
         <script>
+
+            //Button
             const menuBtn= document.querySelector('.menu-btn')
             const navlinks = document.querySelector('.nav-link')
 
@@ -131,74 +133,42 @@
                 navlinks.classList.toggle('mobile-menu')
             })
 
-            /*cara pake search param
-            const myURL = new URL('https://www.youtube.com/');
-            myURL.hostname = 'google.com';
-           // myURL.search = "?name=albert&ID=8888";
-            myURL.searchParams.set("Name","Albert");
-            myURL.searchParams.set("ContractID","0002131204123");*/
+            /*/FetchAPi
+            const url = "https://wsdl.maybankfinance.co.id:8282/api/BackToWork_Main/BackToWork/GetTop_10_Highscore"
+            fetch(url,{
 
-           /* const myURL = new URL(window.location.href);
-            console.log(myURL.searchParams.get("name"));*/
+                method: "POST",
+                headers:{
+                    "X-Auth-Token" : "6GfwBwJcYNtfldKkjScCy2GQJuL6ZAnjFC8KIKa0"
+                }
+            })
+                .then(resp => resp.json())
+                .then(function(data) {
+                console.log(data);
+            })
+                .catch(function(error) {
+                console.log(error);
+            }); */
 
-           /* KEPAKE NI BOS 
-           const myURL = new URL('http://127.0.0.1:5500/index.html');
 
-            myURL.searchParams.set("Name","Albert");
-            myURL.searchParams.set("ContractID","0002131204123");
-
-            fetch(myURL).then(function(response)
-                {
-                return response.text();
-                }).then(function(text){
-                    console.log(text);
-                });*/
-
-            /*fetch('https://wsdl.maybankfinance.co.id:8282/api/BackToWork_Main/BackToWork/GetTop_10_Highscore')
-            .then(res => res.json())
-            .then(data => console.log(data))
             
-            console.log(myURL);
-            console.log(myURL.toString());*/
 
-         /*  const data = { };
+            //Check Mobile
+             
+              let details = navigator.userAgent;
 
-           fetch('https://wsdl.maybankfinance.co.id:8282/api/BackToWork_Main/BackToWork/GetTop_10_Highscore', 
-                    {
-                        method: 'POST', 
-                        headers: {
-                                    'Content-Type': 'application/json',
-                                    'X-Auth-Token':'6GfwBwJcYNtfldKkjScCy2GQJuL6ZAnjFC8KIKa0',
-                                 },
-                        body: JSON.stringify(data),
-                        mode:"cors",
-                        cache:"default",
-                    }
-                )
-
-                .then(response => response.json())
-                .then(data => {console.log('Success:', data);})
-                .catch((error) => {console.error('Error:', error);});*/
-
-
-                let details = navigator.userAgent;
-                        
-                /* Creating a regular expression
-                containing some mobile devices keywords
-                to search it in details string*/
                 let regexp = /android|iphone|kindle|ipad/i;
-                            
-                /* Using test() method to search regexp in details
-                it returns boolean value*/
+
                 let isMobileDevice = regexp.test(details);
                             
                 if (isMobileDevice) {
-                   document.write("<h3>Its a Mobile Device VIEW !</h3>");
+                   document.write("<h3>Its a Mobile Device</h3>");
                 } else {
-                   document.write("<h3>Its a Desktop VIEW !</h3>");
-                   window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+        
+                   document.write("<h3>Its a Desktop</h3>");
+                   window.location.replace("https://gamificationtestingwebsite.netlify.app/Dekstop.html");
                 }
-            
+         
 
 
         </script>

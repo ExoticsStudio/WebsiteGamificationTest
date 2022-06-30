@@ -126,7 +126,7 @@ gdjs.evtsExt__ObjectSpawner__ObjectSpawner.ObjectSpawner.prototype.SpawnObjectCo
 }if ( gdjs.evtsExt__ObjectSpawner__ObjectSpawner.ObjectSpawner.prototype.SpawnObjectContext.condition0IsTrue_0.val ) {
 {
 {gdjs.evtsExt__ObjectSpawner__ObjectSpawner.ObjectSpawner.prototype.SpawnObjectContext.conditionTrue_1 = gdjs.evtsExt__ObjectSpawner__ObjectSpawner.ObjectSpawner.prototype.SpawnObjectContext.condition1IsTrue_0;
-gdjs.evtsExt__ObjectSpawner__ObjectSpawner.ObjectSpawner.prototype.SpawnObjectContext.conditionTrue_1.val = eventsFunctionContext.getOnceTriggers().triggerOnce(9831948);
+gdjs.evtsExt__ObjectSpawner__ObjectSpawner.ObjectSpawner.prototype.SpawnObjectContext.conditionTrue_1.val = eventsFunctionContext.getOnceTriggers().triggerOnce(9484380);
 }
 }}
 if (gdjs.evtsExt__ObjectSpawner__ObjectSpawner.ObjectSpawner.prototype.SpawnObjectContext.condition1IsTrue_0.val) {
