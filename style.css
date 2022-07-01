@@ -37,7 +37,7 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    justify-content:space-between;
+    justify-content: space-between;
     padding: 20px;
     color: white;
 
@@ -46,10 +46,19 @@ body{
 .nav-link{
     display: flex;
     align-items: center;
+    
 }
 
 .nav-link li{
     margin: 0 30px;
+    text-decoration: none;
+    
+}
+
+.nav-link li a{
+    z-index: 10;
+    color:  black;
+    padding: 40px auto;
 }
 
 
@@ -230,6 +239,7 @@ p{
 
     .nav-link li{
         margin: 30px auto;
+
     }
 
     /*events8*/

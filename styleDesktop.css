@@ -72,31 +72,31 @@ header{
 }
 
 .header-content{
-    margin-bottom: 250px;
+    margin-bottom: 235px;
     color: whitesmoke;
     text-align: center;
 }
 
 .header-content h2{
-    font-size: 4vmin;
+    font-size: 6vmin;
 }
 
 .line{
-    width: 150px;
+    width: 100px;
     height: 4px;
     background: yellow;
-    margin: 10px auto;
+    margin: 0px auto;
     border-radius: 5px;
 }
 
 .header-content h1{
     font-size: 7nvim;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .ctn {
-    padding: 8px 15px;
+    padding: 10px 15px;
     background: yellow;
     border-radius: 30px;
     color: black;
