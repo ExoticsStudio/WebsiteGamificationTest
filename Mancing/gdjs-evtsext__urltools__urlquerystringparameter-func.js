@@ -1,43 +1,37 @@
 
-if (typeof gdjs.evtsExt__TimeFormatter__SecondsToHHMMSS !== "undefined") {
-  gdjs.evtsExt__TimeFormatter__SecondsToHHMMSS.registeredGdjsCallbacks.forEach(callback =>
+if (typeof gdjs.evtsExt__URLTools__URLQueryStringParameter !== "undefined") {
+  gdjs.evtsExt__URLTools__URLQueryStringParameter.registeredGdjsCallbacks.forEach(callback =>
     gdjs._unregisterCallback(callback)
   );
 }
 
-gdjs.evtsExt__TimeFormatter__SecondsToHHMMSS = {};
+gdjs.evtsExt__URLTools__URLQueryStringParameter = {};
 
-gdjs.evtsExt__TimeFormatter__SecondsToHHMMSS.conditionTrue_0 = {val:false};
-gdjs.evtsExt__TimeFormatter__SecondsToHHMMSS.condition0IsTrue_0 = {val:false};
+gdjs.evtsExt__URLTools__URLQueryStringParameter.conditionTrue_0 = {val:false};
+gdjs.evtsExt__URLTools__URLQueryStringParameter.condition0IsTrue_0 = {val:false};
 
 
-gdjs.evtsExt__TimeFormatter__SecondsToHHMMSS.userFunc0x84aa210 = function(runtimeScene, eventsFunctionContext) {
-//custom function in custom fonction ~~Woow~~
-var format_time = function (time_second) {
-    date = new Date(null);
-    date.setSeconds(time_second);
-    if (time_second >= 3600) {
-        return date.toISOString().substr(11, 8); // MM:SS
-    } else {
-        return date.toISOString().substr(14, 5); // HH:MM:SS
-    }
-}
+gdjs.evtsExt__URLTools__URLQueryStringParameter.userFunc0x84aa210 = function(runtimeScene, eventsFunctionContext) {
+"use strict";
+eventsFunctionContext.returnValue =
+    (new URL(eventsFunctionContext.getArgument("URL"))
+        .searchParams
+        .get(eventsFunctionContext.getArgument("param")));
 
-eventsFunctionContext.returnValue = format_time(eventsFunctionContext.getArgument("TimeInSeconds"));
 };
-gdjs.evtsExt__TimeFormatter__SecondsToHHMMSS.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__URLTools__URLQueryStringParameter.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
-gdjs.evtsExt__TimeFormatter__SecondsToHHMMSS.userFunc0x84aa210(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__URLTools__URLQueryStringParameter.userFunc0x84aa210(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
 
 };
 
-gdjs.evtsExt__TimeFormatter__SecondsToHHMMSS.func = function(runtimeScene, TimeInSeconds, parentEventsFunctionContext) {
+gdjs.evtsExt__URLTools__URLQueryStringParameter.func = function(runtimeScene, URL, param, parentEventsFunctionContext) {
 var eventsFunctionContext = {
   _objectsMap: {
 },
@@ -82,15 +76,16 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
     return runtimeScene.getLayer(layerName);
   },
   getArgument: function(argName) {
-if (argName === "TimeInSeconds") return TimeInSeconds;
+if (argName === "URL") return URL;
+if (argName === "param") return param;
     return "";
   },
   getOnceTriggers: function() { return runtimeScene.getOnceTriggers(); }
 };
 
 
-gdjs.evtsExt__TimeFormatter__SecondsToHHMMSS.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__URLTools__URLQueryStringParameter.eventsList0(runtimeScene, eventsFunctionContext);
 return "" + eventsFunctionContext.returnValue;
 }
 
-gdjs.evtsExt__TimeFormatter__SecondsToHHMMSS.registeredGdjsCallbacks = [];
+gdjs.evtsExt__URLTools__URLQueryStringParameter.registeredGdjsCallbacks = [];

@@ -35,8 +35,9 @@
         <nav class="navbar">
             <h1 class="logo">Minigames</h1>
             <ul class="nav-link">
-                <li class="Active"><a href="#"></a>LEADERBOARD</li>
+               <!-- <li class="Active"><a href="./Leaderboard.html">Leaderboard</a></li>-->
                <!--<li class="ctn"><a href="./Contact.html"></a>CONTACT</li>--> 
+               <!-- <li class="ctn"><a href="./Leaderboard.html">Leaderboard</a></li>-->
                 <li class="ctn"><a href="./Contact.html">Contact</a></li>
 
             </ul>
@@ -47,14 +48,14 @@
 
         <!--Header-->
         <header>
-           <!-- <div class="header-content">
-                <h2>WELCOME TO MIF-MINIGAMES</h2>
+          <div class="header-content">
+                <!--<h2>WELCOME TO MIF-MINIGAMES</h2>
                 <div class="line"></div>
-                <h1>ALL GAMES ARE FREE TO PLAY</h1>
-                <a href="#" class="ctn">View Leaderboard</a>
+                <h1>ALL GAMES ARE FREE TO PLAY</h1>-->
+                <a href="./Leaderboard.html" class="ctn">View Leaderboard</a>
 
             </div>
-                -->
+                
         </header>
 
         <!--EVENTS-->
@@ -118,7 +119,7 @@
     <!--Footer  -->
        <section class="footer">
            <p>Gamification MIF</p>
-            <p> Copyright © 2022 Maybank Indonesia Finance</p>
+            <p> Copyright © 2022</p>
         </section>
 
         </section>
@@ -156,19 +157,19 @@
 
             //Check Mobile
              
-              let details = navigator.userAgent;
+           let details = navigator.userAgent;
 
                 let regexp = /android|iphone|kindle|ipad/i;
 
                 let isMobileDevice = regexp.test(details);
-                            
+                         
                 if (isMobileDevice) {
-                   //document.write("<h3>Its a Mobile Device</h3>");
+                  //document.write("<h3>Its a Mobile Device</h3>");
                 } else {
         
                    //document.write("<h3>Its a Desktop</h3>");
-                   window.location.replace("https://gamificationtestingwebsite.netlify.app/Dekstop.html");
-                }
+                    window.location.replace("https://gamificationtestingwebsite.netlify.app/Dekstop.html");
+                 }
          
 
 

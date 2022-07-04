@@ -17,6 +17,30 @@ gdjs.TitleScreenCode.GDRoadUp2Objects3_1final = [];
 
 gdjs.TitleScreenCode.GDRoadUpObjects3_1final = [];
 
+gdjs.TitleScreenCode.GDPauseResumeButtonObjects1= [];
+gdjs.TitleScreenCode.GDPauseResumeButtonObjects2= [];
+gdjs.TitleScreenCode.GDPauseResumeButtonObjects3= [];
+gdjs.TitleScreenCode.GDPauseResumeButtonObjects4= [];
+gdjs.TitleScreenCode.GDPauseBackgroundObjects1= [];
+gdjs.TitleScreenCode.GDPauseBackgroundObjects2= [];
+gdjs.TitleScreenCode.GDPauseBackgroundObjects3= [];
+gdjs.TitleScreenCode.GDPauseBackgroundObjects4= [];
+gdjs.TitleScreenCode.GDGamePausedTextObjects1= [];
+gdjs.TitleScreenCode.GDGamePausedTextObjects2= [];
+gdjs.TitleScreenCode.GDGamePausedTextObjects3= [];
+gdjs.TitleScreenCode.GDGamePausedTextObjects4= [];
+gdjs.TitleScreenCode.GDHomeButtonObjects1= [];
+gdjs.TitleScreenCode.GDHomeButtonObjects2= [];
+gdjs.TitleScreenCode.GDHomeButtonObjects3= [];
+gdjs.TitleScreenCode.GDHomeButtonObjects4= [];
+gdjs.TitleScreenCode.GDNewTiledSpriteObjects1= [];
+gdjs.TitleScreenCode.GDNewTiledSpriteObjects2= [];
+gdjs.TitleScreenCode.GDNewTiledSpriteObjects3= [];
+gdjs.TitleScreenCode.GDNewTiledSpriteObjects4= [];
+gdjs.TitleScreenCode.GDObstacleObjects1= [];
+gdjs.TitleScreenCode.GDObstacleObjects2= [];
+gdjs.TitleScreenCode.GDObstacleObjects3= [];
+gdjs.TitleScreenCode.GDObstacleObjects4= [];
 gdjs.TitleScreenCode.GDRoadRightObjects1= [];
 gdjs.TitleScreenCode.GDRoadRightObjects2= [];
 gdjs.TitleScreenCode.GDRoadRightObjects3= [];
@@ -57,10 +81,6 @@ gdjs.TitleScreenCode.GDButtonObjects1= [];
 gdjs.TitleScreenCode.GDButtonObjects2= [];
 gdjs.TitleScreenCode.GDButtonObjects3= [];
 gdjs.TitleScreenCode.GDButtonObjects4= [];
-gdjs.TitleScreenCode.GDPlayTxtObjects1= [];
-gdjs.TitleScreenCode.GDPlayTxtObjects2= [];
-gdjs.TitleScreenCode.GDPlayTxtObjects3= [];
-gdjs.TitleScreenCode.GDPlayTxtObjects4= [];
 gdjs.TitleScreenCode.GDTitleLogoObjects1= [];
 gdjs.TitleScreenCode.GDTitleLogoObjects2= [];
 gdjs.TitleScreenCode.GDTitleLogoObjects3= [];
@@ -69,6 +89,10 @@ gdjs.TitleScreenCode.GDGrassBGObjects1= [];
 gdjs.TitleScreenCode.GDGrassBGObjects2= [];
 gdjs.TitleScreenCode.GDGrassBGObjects3= [];
 gdjs.TitleScreenCode.GDGrassBGObjects4= [];
+gdjs.TitleScreenCode.GDWhiteBGObjects1= [];
+gdjs.TitleScreenCode.GDWhiteBGObjects2= [];
+gdjs.TitleScreenCode.GDWhiteBGObjects3= [];
+gdjs.TitleScreenCode.GDWhiteBGObjects4= [];
 
 gdjs.TitleScreenCode.conditionTrue_0 = {val:false};
 gdjs.TitleScreenCode.condition0IsTrue_0 = {val:false};
@@ -585,7 +609,7 @@ for(var i = 0, k = 0, l = gdjs.TitleScreenCode.GDCarObjects2.length;i<l;++i) {
 gdjs.TitleScreenCode.GDCarObjects2.length = k;}if ( gdjs.TitleScreenCode.condition0IsTrue_0.val ) {
 {
 {gdjs.TitleScreenCode.conditionTrue_1 = gdjs.TitleScreenCode.condition1IsTrue_0;
-gdjs.TitleScreenCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(12780988);
+gdjs.TitleScreenCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(115783476);
 }
 }}
 if (gdjs.TitleScreenCode.condition1IsTrue_0.val) {
@@ -677,11 +701,35 @@ gdjs.TitleScreenCode.eventsList3(runtimeScene);
 {
 
 
+
+}
+
+
+{
+
+
 gdjs.TitleScreenCode.condition0IsTrue_0.val = false;
 {
 gdjs.TitleScreenCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 }if (gdjs.TitleScreenCode.condition0IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(2).setNumber(15);
+{runtimeScene.getGame().getVariables().get("CurrentURL").setString(gdjs.evtsExt__URLTools__CurrentURL.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
+}{runtimeScene.getGame().getVariables().get("Param_ContractID").setString(gdjs.evtsExt__URLTools__URLQueryStringParameter.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().get("CurrentURL")), "ContractID", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
+}{runtimeScene.getGame().getVariables().get("Username").setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().get("Param_ContractID")));
+}}
+
+}
+
+
+};gdjs.TitleScreenCode.eventsList6 = function(runtimeScene) {
+
+{
+
+
+gdjs.TitleScreenCode.condition0IsTrue_0.val = false;
+{
+gdjs.TitleScreenCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+}if (gdjs.TitleScreenCode.condition0IsTrue_0.val) {
+{runtimeScene.getGame().getVariables().getFromIndex(2).setNumber(45);
 }{runtimeScene.getGame().getVariables().getFromIndex(3).setNumber(0);
 }{gdjs.evtTools.variable.variableClearChildren(runtimeScene.getGame().getVariables().getFromIndex(0));
 }{gdjs.evtTools.variable.valuePush(runtimeScene.getGame().getVariables().getFromIndex(0), "Stage1");
@@ -689,6 +737,10 @@ gdjs.TitleScreenCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJu
 }{gdjs.evtTools.variable.valuePush(runtimeScene.getGame().getVariables().getFromIndex(0), "Stage3");
 }{gdjs.evtTools.variable.valuePush(runtimeScene.getGame().getVariables().getFromIndex(0), "Stage4");
 }{gdjs.evtTools.variable.valuePush(runtimeScene.getGame().getVariables().getFromIndex(0), "Stage5");
+}{gdjs.evtTools.variable.valuePush(runtimeScene.getGame().getVariables().getFromIndex(0), "Stage6");
+}{gdjs.evtTools.variable.valuePush(runtimeScene.getGame().getVariables().getFromIndex(0), "Stage7");
+}{gdjs.evtTools.variable.valuePush(runtimeScene.getGame().getVariables().getFromIndex(0), "Stage8");
+}{gdjs.evtTools.variable.valuePush(runtimeScene.getGame().getVariables().getFromIndex(0), "Stage9");
 }}
 
 }
@@ -722,11 +774,42 @@ gdjs.TitleScreenCode.eventsList4(runtimeScene);
 }
 
 
+{
+
+
+gdjs.TitleScreenCode.eventsList5(runtimeScene);
+}
+
+
 };
 
 gdjs.TitleScreenCode.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
+gdjs.TitleScreenCode.GDPauseResumeButtonObjects1.length = 0;
+gdjs.TitleScreenCode.GDPauseResumeButtonObjects2.length = 0;
+gdjs.TitleScreenCode.GDPauseResumeButtonObjects3.length = 0;
+gdjs.TitleScreenCode.GDPauseResumeButtonObjects4.length = 0;
+gdjs.TitleScreenCode.GDPauseBackgroundObjects1.length = 0;
+gdjs.TitleScreenCode.GDPauseBackgroundObjects2.length = 0;
+gdjs.TitleScreenCode.GDPauseBackgroundObjects3.length = 0;
+gdjs.TitleScreenCode.GDPauseBackgroundObjects4.length = 0;
+gdjs.TitleScreenCode.GDGamePausedTextObjects1.length = 0;
+gdjs.TitleScreenCode.GDGamePausedTextObjects2.length = 0;
+gdjs.TitleScreenCode.GDGamePausedTextObjects3.length = 0;
+gdjs.TitleScreenCode.GDGamePausedTextObjects4.length = 0;
+gdjs.TitleScreenCode.GDHomeButtonObjects1.length = 0;
+gdjs.TitleScreenCode.GDHomeButtonObjects2.length = 0;
+gdjs.TitleScreenCode.GDHomeButtonObjects3.length = 0;
+gdjs.TitleScreenCode.GDHomeButtonObjects4.length = 0;
+gdjs.TitleScreenCode.GDNewTiledSpriteObjects1.length = 0;
+gdjs.TitleScreenCode.GDNewTiledSpriteObjects2.length = 0;
+gdjs.TitleScreenCode.GDNewTiledSpriteObjects3.length = 0;
+gdjs.TitleScreenCode.GDNewTiledSpriteObjects4.length = 0;
+gdjs.TitleScreenCode.GDObstacleObjects1.length = 0;
+gdjs.TitleScreenCode.GDObstacleObjects2.length = 0;
+gdjs.TitleScreenCode.GDObstacleObjects3.length = 0;
+gdjs.TitleScreenCode.GDObstacleObjects4.length = 0;
 gdjs.TitleScreenCode.GDRoadRightObjects1.length = 0;
 gdjs.TitleScreenCode.GDRoadRightObjects2.length = 0;
 gdjs.TitleScreenCode.GDRoadRightObjects3.length = 0;
@@ -767,10 +850,6 @@ gdjs.TitleScreenCode.GDButtonObjects1.length = 0;
 gdjs.TitleScreenCode.GDButtonObjects2.length = 0;
 gdjs.TitleScreenCode.GDButtonObjects3.length = 0;
 gdjs.TitleScreenCode.GDButtonObjects4.length = 0;
-gdjs.TitleScreenCode.GDPlayTxtObjects1.length = 0;
-gdjs.TitleScreenCode.GDPlayTxtObjects2.length = 0;
-gdjs.TitleScreenCode.GDPlayTxtObjects3.length = 0;
-gdjs.TitleScreenCode.GDPlayTxtObjects4.length = 0;
 gdjs.TitleScreenCode.GDTitleLogoObjects1.length = 0;
 gdjs.TitleScreenCode.GDTitleLogoObjects2.length = 0;
 gdjs.TitleScreenCode.GDTitleLogoObjects3.length = 0;
@@ -779,8 +858,12 @@ gdjs.TitleScreenCode.GDGrassBGObjects1.length = 0;
 gdjs.TitleScreenCode.GDGrassBGObjects2.length = 0;
 gdjs.TitleScreenCode.GDGrassBGObjects3.length = 0;
 gdjs.TitleScreenCode.GDGrassBGObjects4.length = 0;
+gdjs.TitleScreenCode.GDWhiteBGObjects1.length = 0;
+gdjs.TitleScreenCode.GDWhiteBGObjects2.length = 0;
+gdjs.TitleScreenCode.GDWhiteBGObjects3.length = 0;
+gdjs.TitleScreenCode.GDWhiteBGObjects4.length = 0;
 
-gdjs.TitleScreenCode.eventsList5(runtimeScene);
+gdjs.TitleScreenCode.eventsList6(runtimeScene);
 return;
 
 }

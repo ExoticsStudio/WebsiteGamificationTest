@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <title>LEADERBOARD</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+        <!--CSS-->
+        <link rel="stylesheet" href="./Leaderboard.css">
+        <link rel="javascript" href="./script.js">
+        <link rel="shortcut icon" type="x-icon" href="./img/Icon.png">
+
+        <!--getURL-->
+        <script>
+            /*function getParameter(ParameterName)
+            {
+                let paramater = new URLSearchParams(window.location.search);
+                return paramater.get(ParameterName);
+            }*/
+
+        </script>
+
+
+
+
+    </head>
+
+  
+
+    <body>
+          <!--navbar-->
+          <nav class="navbar">
+            <!--<h1 class="logo">MIF</h1>-->
+            <ul class="nav-link">
+               <!--<li class="ctn"><a href="./Contact.html"></a>CONTACT</li>--> 
+                <li class="ctn"><a href="./index.html">HOME</a></li>
+
+            </ul>
+            <img src="./img/menu-btn.png" alt="" class="menu-btn">
+
+        </nav>
+
+
+        <!--Header
+        <header>
+         <div class="header-content">
+                <h2>Leaderboard</h2>
+                <div class="line"></div>
+
+            </div>
+            
+        </header>-->
+
+
+       
+        <section class="events">
+            
+            <div class="title">
+                <h1>TOP 10</h1>
+                <div class="line"></div>   
+            </div>
+            
+            <div class="Chart"><!--<p>DataData</p>-->  </div>  
+          
+            
+        </section>
+
+    
+
+
+
+        <section class="footer">
+            <p>Gamification MIF</p>
+             <p> Copyright © 2022</p>
+         </section>
+
+    </body>
+
+
+    <script>
+
+         //Button
+         const menuBtn= document.querySelector('.menu-btn')
+            const navlinks = document.querySelector('.nav-link')
+
+            menuBtn.addEventListener('click',()=>{
+                navlinks.classList.toggle('mobile-menu')
+            })
+
+
+
+
+
+
+
+
+        //nama array LeaderboardTop10
+        const LeaderboardTOP10 = [
+            //Array 0
+            {
+                id: 1,
+                nama: "Albert",
+                totalscore: 999,
+               
+            },
+            //Array 1
+            {
+                id: 2,
+                nama: "Kevin",
+                totalscore: 999,
+                
+            },
+            //Array 2
+            {
+                id: 3,
+                nama: "Rully",
+                totalscore: 999,
+               
+            },
+            //Array 3
+            {
+                id: 4,
+                nama: "Christ",
+                totalscore: 999,
+               
+            },
+            //Array 4
+            {
+                id: 5,
+                nama: "Albert",
+                totalscore: 999,
+               
+            },
+            //Array 5
+            {
+                id: 6,
+                nama: "Kevin",
+                totalscore: 999,
+                
+            },
+            //Array 6
+            {
+                id: 7,
+                nama: "Rully",
+                totalscore: 999,
+               
+            },
+            //Array 7
+            {
+                id: 8,
+                nama: "Christ",
+                totalscore: 999,
+               
+            },
+            //Array 8
+            {
+                id: 9,
+                nama: "Rully",
+                totalscore: 999,
+               
+            },
+            //Array 9
+            {
+                id: 10,
+                nama: "Christ",
+                totalscore: 999,
+               
+            },
+
+        
+
+        ];
+        //test array
+        console.log(LeaderboardTOP10)
+
+        //insert jS ke HTML dengan class
+        const Chart = document.getElementsByClassName('Chart')[0];
+            console.log(Chart)
+
+        
+        // //insert jS ke HTML dengan ID
+        // const ChartID = document.getElementById('ChartID');
+        //     console.log(Chart)
+
+
+        //Insert js looping
+        LeaderboardTOP10.forEach((LeaderboardTOP10, index)=>{
+            //create Horizontal Line
+           // let itemHR = document.createElement('HR');
+
+            let itemP = document.createElement('P');
+            let itemPText = document.createTextNode(`${LeaderboardTOP10.id} : ${LeaderboardTOP10.nama} ${LeaderboardTOP10.totalscore} `);
+            itemP.appendChild(itemPText);
+
+            Chart.appendChild(itemP);
+           // Chart.appendChild(itemHR);
+          //  console.log('ID: ' + LeaderboardTOP10.id + '\n' + 'nama: ' + LeaderboardTOP10.nama + '\n' + 'score: ' +LeaderboardTOP10.totalscore)
+
+        })
+
+
+
+    </script>
