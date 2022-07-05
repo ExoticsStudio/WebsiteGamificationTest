@@ -176,14 +176,22 @@ p{
     margin-top: 20px;
 }
 
+.events .Chart{
+    background-color: rgb(71, 71, 71);
+    border-radius: 50px;
+    
+}
+
 .events .Chart p {
     padding: 40px auto ;
     color: black;
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 40px;
+  
+   /* margin-top: 10px;
+    margin-bottom: 20px;*/
    
-    background-color: yellow;
+   
 
 
 }
@@ -216,14 +224,16 @@ p{
     }
 
     section h1{
-        color: red;
-        background-color: aqua;
+        color: white;
+        
         margin: 0px 100px;
     }
 
     .menu-btn{
         display: block;
     }
+
+
 
     .navbar{
         padding: 0;
@@ -258,6 +268,17 @@ p{
     }
 
     /*events8*/
+
+    .events .Chart p {
+        padding: 0px 10px ;
+        color: white;
+        text-align: center;
+        
+       
+
+    
+    
+    }
     /*nentuin row*/
     .row{
         flex-direction: row;
