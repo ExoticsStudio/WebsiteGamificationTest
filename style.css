@@ -1,5 +1,126 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
 
+
+/*Transition*/
+
+.header-content{
+
+    animation: flipping 2s;
+}
+
+.row .col img[data-scroll="in"]{
+    animation: imageIn 2s;
+    
+}
+
+.row .col img[data-scroll="out"]{
+    animation: imageOut 2s;
+    
+}
+
+
+.col h4[data-scroll="in"]{
+   
+    animation: textOpacity 3s ;
+
+}
+
+.col h4[data-scroll="out"]{
+    animation: textOpacityOut 5s ;
+
+}
+
+.col h3[data-scroll="in"]{
+    animation: textOpacity 3s ;
+
+}
+
+.col h3[data-scroll="out"]{
+    animation: textOpacityOut 5s ;
+
+}
+
+.col p[data-scroll="in"]{
+    animation: textOpacity 5s ;
+
+}
+
+.col p[data-scroll="out"]{
+    animation: textOpacityOut 5s ;
+
+}
+
+
+
+
+
+@keyframes textOpacity {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes textOpacityOut {
+    from{
+        opacity: 1;
+    }
+
+    to{
+        opacity: 0;
+    }
+}
+
+
+@keyframes flipping{
+
+    from{
+        opacity: 0;
+        transform: rotateX(-180deg);
+    }
+
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+
+}
+
+@keyframes imageOut {
+    from{
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    to{
+        opacity: 0;
+        transform: scale(0);
+    }
+    
+}
+
+
+@keyframes imageIn{
+    from{
+        opacity: 0;
+        transform: scale(0);
+        
+    }
+
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+
 /*====Global ====*/
 *{
     margin: 0;
@@ -94,7 +215,7 @@ header{
     width: 150px;
     height: 4px;
     background: yellow;
-    margin: 10px auto;
+    margin: 5px auto;
     border-radius: 5px;
 }
 
@@ -180,7 +301,7 @@ p{
     min-height: 100px;
     padding: 20px 80px;
     margin:0;
-   background: yellow;
+   background: #fdd316;
    text-align: center;
 }
 
@@ -203,8 +324,20 @@ p{
 
     section h1{
         color: white;
-        margin: 0px 10px;
+        margin: 10px auto;
     }
+
+    section h2{
+        color: #222428;
+    }
+
+    
+
+    section P{
+        color: white;
+        margin: 0px auto;
+    }
+
 
     .menu-btn{
         display: block;
@@ -250,7 +383,7 @@ p{
     }
 
     .row .col{
-        margin: 20px auto;
+        margin: 0px auto;
     }
 
     /*ukuran gambar*/
@@ -261,10 +394,54 @@ p{
     .col h4{
         color: white;
     }
+
+    .col h3{
+        color: #fdd316;
+        margin-top: 10px;
+    }
+
+    .col p{
+        color: white;
+        margin-top: 10px;
+        text-align: center;
+    }
+
     .footer{
         padding: 10px;
     }
 
+    /*Featured*/
+    .Featured{
+        background-color: red;
+        width: 100%;
+        transition: all 0.5s ease;
+        margin: 10px auto;
+        
+    }
+
+    .Featured h1{
+        color: yellow;
+    }
+
+
+    .Featured .rowFeatured{
+        flex-direction: column;
+        background-color: aquamarine;
+        align-content: center;
+
+    }
+
+    .Featured .rowFeatured .colFeatured{
+        flex-direction: column;
+        background-color: blue;
+        align-content: center;
+
+    }
+
+
+    .Featured .rowFeatured .img{
+        background-color: aliceblue;
+    }
 
 
 }

@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
 
+
+
+
+
 /*====Global ====*/
 *{
     margin: 0;
@@ -76,7 +80,7 @@ header{
 }
 
 .header-content{
-    margin-bottom: 350px;
+    margin: 250px auto;
     color: whitesmoke;
     text-align: center;
 }
@@ -86,8 +90,8 @@ header{
 }
 
 .line{
-    width: 200px;
-    height: 4px;
+    width: 500px;
+    height: 2px;
     background: yellow;
     margin: 10px auto;
     border-radius: 4px;
@@ -175,7 +179,7 @@ p{
     min-height: 100px;
     padding: 20px 80px;
     margin:0;
-   background: yellow;
+   background: #fdd316;
    text-align: center;
 }
 

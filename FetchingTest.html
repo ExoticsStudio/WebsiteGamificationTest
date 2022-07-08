@@ -10,7 +10,7 @@
 	<script>
 		user = {
 			"name": "Geeks for Geeks",
-			"age": "23"
+			"age": "24"
 		}
 		// Options to be given as parameter
 		// in fetch for making requests
@@ -25,8 +25,8 @@
 		}
 		// Fake api for making post requests
 		let fetchRes = fetch(
-"https://cors-anywhere.herokuapp.com/http://dummy.restapiexample.com/api/v1/create",
-										options);
+			"http://wsdl.maybankfinance.co.id:8282/api/BackToWork_Main/BackToWork/GetTop_10_Highscore",
+			options);
 		fetchRes.then(res =>
 			res.json()).then(d => {
 				console.log(d)
