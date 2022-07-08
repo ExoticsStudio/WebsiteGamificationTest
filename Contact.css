@@ -90,7 +90,7 @@ header{
 }
 
 .line{
-    width: 500px;
+    width: 150px;
     height: 2px;
     background: yellow;
     margin: 10px auto;
