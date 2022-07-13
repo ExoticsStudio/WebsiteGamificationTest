@@ -1566,7 +1566,7 @@ gdjs.evtsExt__SimpleScrollableListExtension__SimpleScrollableListBehavior.Simple
 gdjs.evtsExt__SimpleScrollableListExtension__SimpleScrollableListBehavior.SimpleScrollableListBehavior.prototype.AddItemContext.condition0IsTrue_0 = {val:false};
 
 
-gdjs.evtsExt__SimpleScrollableListExtension__SimpleScrollableListBehavior.SimpleScrollableListBehavior.prototype.AddItemContext.userFunc0xa20430 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__SimpleScrollableListExtension__SimpleScrollableListBehavior.SimpleScrollableListBehavior.prototype.AddItemContext.userFunc0x8870c8 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const ListItems = objects[0].getVariables().get("ListItems");
 const AddItem = objects[0].getVariables().get("__SSLE_AddItem");
@@ -1599,7 +1599,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SimpleS
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__SimpleScrollableListExtension__SimpleScrollableListBehavior.SimpleScrollableListBehavior.prototype.AddItemContext.GDObjectObjects1);
-gdjs.evtsExt__SimpleScrollableListExtension__SimpleScrollableListBehavior.SimpleScrollableListBehavior.prototype.AddItemContext.userFunc0xa20430(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__SimpleScrollableListExtension__SimpleScrollableListBehavior.SimpleScrollableListBehavior.prototype.AddItemContext.userFunc0x8870c8(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
