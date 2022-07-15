@@ -173,12 +173,13 @@ body{
 .nav-link li{
     margin: 0 30px;
     text-decoration: none;
-    
+    color: red;
 }
 
 .navbar .nav-link .Active li a {
     z-index: 10;
-    color:  black
+    color:  black;
+  
     
 }
 

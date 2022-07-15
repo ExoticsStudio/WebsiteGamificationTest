@@ -233,13 +233,33 @@
                    //document.write("<h3>Its a Desktop</h3>");
                     window.location.replace("https://gamificationtestingwebsite.netlify.app/Dekstop.html");
                  }*/
-         
+                 
+                 /*Get Current URL*/
+                 function getURL() {
+                alert("The URL of this page is: " + window.location.href);
+                }
 
+                /*Get Current URL Parameter*/
+                
+                const queryString = window.location.search;
+                //test
+                console.log(queryString);
+                
+                //get ContractID
+                const urlParams = new URLSearchParams(queryString);
+                console.log("Apakah ContractID ada? " + urlParams.has('contractID'));
+                console.log("Apakah UserUD ada? "+ urlParams.has('UserID'));
+                const ContractID = urlParams.get('contractID');
+                console.log("Mengambil ContractID dari Parameter :" + ContractID);
+
+                //append test
+                queryString.append('contractID',ContractID)
+                console.log(queryString);
 
         </script>
 
 
-
+            <button type="button" onclick="getURL();">Get Page URL</button>
 
 
     </body>
