@@ -117,14 +117,14 @@
 <!--Baris 1-->
             <div class="row">
                 <div class="col">
-                    <a href="./TigerCross/index.html" class="col"><img src="./img/TigerCross.png" alt=""></a>
+                    <a href="./TigerCross/index.html" id="Game1" class="col"><img src="./img/TigerCross.png" alt=""></a>
                     <h4>Tiger Cross</h4>
                     <!--<p>belum ada ide kalimat guys wkwkwbelum ada ide kalimat guys wkwkw</p>-->
                      
                 </div>
 
                 <div class="col">
-                    <a href="./Mancing2/index.html" class="col"><img src="./img/SaveOurSea.png" alt=""></a>
+                    <a href="./Mancing2/index.html" id="Game2" class="col"><img src="./img/SaveOurSea.png" alt=""></a>
                     <h4>Save Our Sea</h4>
                     <!--<p>belum ada ide kalimat guys wkwkwbelum ada ide kalimat guys wkwkw</p>-->
                     <!--<a href="#" class="ctn">PLAY SAVE OUR SEA</a>-->
@@ -133,14 +133,14 @@
 <!--Baris 2-->
             <div class="row">
                 <div class="col">
-                    <a href="./SpaceDefender/index.html" class="col"><img src="./img/SpaceDefender.png" alt=""></a>
+                    <a href="./SpaceDefender/index.html" id="Game3" class="col"><img src="./img/SpaceDefender.png" alt=""></a>
                     <h4>SPACE DEFENDER</h4>
                     <!--<p>belum ada ide kalimat guys wkwkwbelum ada ide kalimat guys wkwkw</p>-->
                      <!--<a href="#" class="ctn">PLAY SAVE OUR SEA</a>-->
                 </div>
 
                 <div class="col">
-                    <a href="./VehiclePicker/index.html" class="col"><img src="./img/VehiclePicker.png" alt=""></a>
+                    <a href="./VehiclePicker/index.html" id="Game4" class="col"><img src="./img/VehiclePicker.png" alt=""></a>
                     <h4>VEHICLE PICKER</h4>
                     <!--<p>belum ada ide kalimat guys wkwkwbelum ada ide kalimat guys wkwkw</p>-->
                      <!--<a href="#" class="ctn">PLAY SAVE OUR SEA</a>-->
@@ -149,14 +149,14 @@
 <!--Baris 3-->
             <div class="row">
                 <div class="col">
-                    <a href="./LeasingFrenzy2/index.html" class="col"><img src="./img/LeasingFrenzy.png" alt=""></a>
+                    <a href="./LeasingFrenzy2/index.html" id="Game5" class="col"><img src="./img/LeasingFrenzy.png" alt=""></a>
                     <h4>LEASING FRENZY</h4>
                     <!--<p>belum ada ide kalimat guys wkwkwbelum ada ide kalimat guys wkwkw</p>-->
                      <!--<a href="#" class="ctn">PLAY SAVE OUR SEA</a>-->
                 </div>
 
                 <div class="col">
-                    <a href="./KangParkir2/index.html" class="col"><img src="./img/KangParkir.png" alt=""></a>
+                    <a href="./KangParkir2/index.html" id="Game6" class="col"><img src="./img/KangParkir.png" alt=""></a>
                     <h4>KANG PARKIR</h4>
                     <!--<p>belum ada ide kalimat guys wkwkwbelum ada ide kalimat guys wkwkw</p>-->
                      <!--<a href="#" class="ctn">PLAY SAVE OUR SEA</a>-->
@@ -252,9 +252,23 @@
                 const ContractID = urlParams.get('contractID');
                 console.log("Mengambil ContractID dari Parameter :" + ContractID);
 
-                //append test
+                /*append test
                 queryString.append('contractID',ContractID)
-                console.log(queryString);
+                console.log(queryString);*/
+                var changeTarget = document.getElementById('game1');
+                var params = window.location.search;
+                var _href = changeTarget.href;
+
+                if(params){
+                    changeTarget.href = _href+params;
+                    console.log("url params = " + params);
+                    console.log("Berhasil");
+                }
+                else
+                {
+                    console.log("Gagal");
+                }
+
 
         </script>
 
