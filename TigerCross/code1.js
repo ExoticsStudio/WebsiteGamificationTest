@@ -109,7 +109,25 @@ gdjs.copyArray(runtimeScene.getObjects("Score"), gdjs.GameOverCode.GDScoreObject
 }
 
 
-};gdjs.GameOverCode.eventsList1 = function(runtimeScene) {
+};gdjs.GameOverCode.mapOfGDgdjs_46GameOverCode_46GDRetryObjects2Objects = Hashtable.newFrom({"Retry": gdjs.GameOverCode.GDRetryObjects2});
+gdjs.GameOverCode.eventsList1 = function(runtimeScene) {
+
+{
+
+
+gdjs.GameOverCode.condition0IsTrue_0.val = false;
+{
+{gdjs.GameOverCode.conditionTrue_1 = gdjs.GameOverCode.condition0IsTrue_0;
+gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(140707868);
+}
+}if (gdjs.GameOverCode.condition0IsTrue_0.val) {
+{gdjs.evtTools.network.sendAsyncRequest("https://localhost:44312/api/Gamification2022/Gamification/UpdateTigerCross", "{ \"username\": " + gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getGame().getVariables().getFromIndex(10)) + ",\n   \"score\": " + gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getGame().getVariables().getFromIndex(5)) + ",\n   \"Highscore\": " + gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getVariables().get("Score_loaded")) + " \n }", "POST", "application/json", runtimeScene.getVariables().get("Return_Temp"), gdjs.VariablesContainer.badVariable);
+}}
+
+}
+
+
+};gdjs.GameOverCode.eventsList2 = function(runtimeScene) {
 
 {
 
@@ -118,7 +136,111 @@ gdjs.copyArray(runtimeScene.getObjects("Score"), gdjs.GameOverCode.GDScoreObject
 }
 
 
-};gdjs.GameOverCode.eventsList2 = function(runtimeScene) {
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Retry"), gdjs.GameOverCode.GDRetryObjects2);
+
+gdjs.GameOverCode.condition0IsTrue_0.val = false;
+gdjs.GameOverCode.condition1IsTrue_0.val = false;
+gdjs.GameOverCode.condition2IsTrue_0.val = false;
+{
+gdjs.GameOverCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.GameOverCode.mapOfGDgdjs_46GameOverCode_46GDRetryObjects2Objects, runtimeScene, true, false);
+}if ( gdjs.GameOverCode.condition0IsTrue_0.val ) {
+{
+gdjs.GameOverCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+}if ( gdjs.GameOverCode.condition1IsTrue_0.val ) {
+{
+{gdjs.GameOverCode.conditionTrue_1 = gdjs.GameOverCode.condition2IsTrue_0;
+gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(138348372);
+}
+}}
+}
+if (gdjs.GameOverCode.condition2IsTrue_0.val) {
+{gdjs.evtTools.network.sendAsyncRequest("https://localhost:44312/api/Gamification2022/Gamification/UpdateTigerCross", "{ \"username\": " + gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getGame().getVariables().getFromIndex(10)) + ",\n   \"score\": " + gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getGame().getVariables().getFromIndex(5)) + ",\n   \"Highscore\": " + gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getVariables().get("Score_loaded")) + " \n }", "POST", "application/json", runtimeScene.getVariables().get("Return_Temp"), gdjs.VariablesContainer.badVariable);
+}}
+
+}
+
+
+{
+
+
+
+}
+
+
+{
+
+
+gdjs.GameOverCode.condition0IsTrue_0.val = false;
+{
+gdjs.GameOverCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+}if (gdjs.GameOverCode.condition0IsTrue_0.val) {
+{gdjs.evtTools.network.sendAsyncRequest("https://localhost:44312/api/Gamification2022/Gamification/GetTigerCross", "{ \n\"username\": " + gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getGame().getVariables().getFromIndex(10)) + "\n  \n }", "POST", "application/json", runtimeScene.getVariables().get("Return_Get"), gdjs.VariablesContainer.badVariable);
+}}
+
+}
+
+
+{
+
+
+{
+{gdjs.evtTools.network.jsonToVariableStructure(gdjs.evtTools.variable.getVariableString(runtimeScene.getVariables().get("Return_Get")), runtimeScene.getGame().getVariables().get("DataConvertedtoGlobal"));
+}{runtimeScene.getGame().getVariables().get("ScoreLoadedfromDatabaseSQL").setNumber(gdjs.evtTools.common.toNumber(gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().get("DataConvertedtoGlobal").getChild("data").getChild("highscore")))));
+}}
+
+}
+
+
+{
+
+
+gdjs.GameOverCode.condition0IsTrue_0.val = false;
+{
+{gdjs.GameOverCode.conditionTrue_1 = gdjs.GameOverCode.condition0IsTrue_0;
+gdjs.GameOverCode.conditionTrue_1.val = (gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().get("ScoreLoadedfromDatabaseSQL")) > gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(5)));
+}
+}if (gdjs.GameOverCode.condition0IsTrue_0.val) {
+gdjs.copyArray(runtimeScene.getObjects("Highscore"), gdjs.GameOverCode.GDHighscoreObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Score"), gdjs.GameOverCode.GDScoreObjects2);
+{for(var i = 0, len = gdjs.GameOverCode.GDHighscoreObjects2.length ;i < len;++i) {
+    gdjs.GameOverCode.GDHighscoreObjects2[i].setBBText(gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().get("ScoreLoadedfromDatabaseSQL"))));
+}
+}{for(var i = 0, len = gdjs.GameOverCode.GDScoreObjects2.length ;i < len;++i) {
+    gdjs.GameOverCode.GDScoreObjects2[i].setBBText(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(5)));
+}
+}}
+
+}
+
+
+{
+
+
+gdjs.GameOverCode.condition0IsTrue_0.val = false;
+{
+{gdjs.GameOverCode.conditionTrue_1 = gdjs.GameOverCode.condition0IsTrue_0;
+gdjs.GameOverCode.conditionTrue_1.val = (gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().get("ScoreLoadedfromDatabaseSQL")) < gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(5)));
+}
+}if (gdjs.GameOverCode.condition0IsTrue_0.val) {
+gdjs.copyArray(runtimeScene.getObjects("Highscore"), gdjs.GameOverCode.GDHighscoreObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Score"), gdjs.GameOverCode.GDScoreObjects1);
+{for(var i = 0, len = gdjs.GameOverCode.GDScoreObjects1.length ;i < len;++i) {
+    gdjs.GameOverCode.GDScoreObjects1[i].setBBText(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(5)));
+}
+}{for(var i = 0, len = gdjs.GameOverCode.GDHighscoreObjects1.length ;i < len;++i) {
+    gdjs.GameOverCode.GDHighscoreObjects1[i].setBBText(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(5)));
+}
+}
+{ //Subevents
+gdjs.GameOverCode.eventsList1(runtimeScene);} //End of subevents
+}
+
+}
+
+
+};gdjs.GameOverCode.eventsList3 = function(runtimeScene) {
 
 {
 
@@ -205,7 +327,7 @@ gdjs.GameOverCode.conditionTrue_1.val = true && gdjs.GameOverCode.condition0IsTr
 }if ( gdjs.GameOverCode.condition0IsTrue_0.val ) {
 {
 {gdjs.GameOverCode.conditionTrue_1 = gdjs.GameOverCode.condition1IsTrue_0;
-gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10882364);
+gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(138281708);
 }
 }}
 if (gdjs.GameOverCode.condition1IsTrue_0.val) {
@@ -291,7 +413,7 @@ gdjs.GameOverCode.condition1IsTrue_0.val = !(gdjs.evtTools.storage.elementExists
 }if ( gdjs.GameOverCode.condition1IsTrue_0.val ) {
 {
 {gdjs.GameOverCode.conditionTrue_1 = gdjs.GameOverCode.condition2IsTrue_0;
-gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10886940);
+gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(138237092);
 }
 }}
 }
@@ -331,7 +453,7 @@ gdjs.GameOverCode.condition1IsTrue_0.val = gdjs.evtTools.storage.elementExistsIn
 }if ( gdjs.GameOverCode.condition1IsTrue_0.val ) {
 {
 {gdjs.GameOverCode.conditionTrue_1 = gdjs.GameOverCode.condition2IsTrue_0;
-gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10889460);
+gdjs.GameOverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(138235316);
 }
 }}
 }
@@ -415,7 +537,7 @@ gdjs.copyArray(runtimeScene.getObjects("Score_Text"), gdjs.GameOverCode.GDScore_
 {
 
 
-gdjs.GameOverCode.eventsList1(runtimeScene);
+gdjs.GameOverCode.eventsList2(runtimeScene);
 }
 
 
@@ -458,7 +580,7 @@ gdjs.GameOverCode.GDNewTiledSpriteObjects1.length = 0;
 gdjs.GameOverCode.GDNewTiledSpriteObjects2.length = 0;
 gdjs.GameOverCode.GDNewTiledSpriteObjects3.length = 0;
 
-gdjs.GameOverCode.eventsList2(runtimeScene);
+gdjs.GameOverCode.eventsList3(runtimeScene);
 return;
 
 }
