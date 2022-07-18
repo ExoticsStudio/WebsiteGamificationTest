@@ -238,29 +238,30 @@
 
 
                  //INPUT PARAMETER
-
-                var inputCustomerID = prompt("Input your customer ID: ");
-                 console.log(inputCustomerID);
+                 
+               var inputCustomerID = prompt("Input your customer ID: ");
+               console.log("Hasil Input user: " + inputCustomerID);
                 
                 /* window.location.search = '?customerID='+ inputCustomerID;*/
 
 
                  var url = window.location.href;    
-                    if (url.indexOf('?') > -1){
-                         url += '&param=' + inputCustomerID
+                    if (url.indexOf('?')  > -1){
+                         url += '/?UserID=' + inputCustomerID
                         }else{
-                         url += '?param=' + inputCustomerID
+                         url += '/&userID=Albert' + inputCustomerID
                         }
-                    window.location.href = url;
+                window.location.href = url;  
            
               
 
-                 /*Get Current URL*/
+                // Get Current URL
                  function getURL() {
                 alert("The URL of this page is: " + window.location.href);
                 }
 
                 alert(getURL());
+
                 /*Get Current URL Parameter*/
                 
                 const queryString = window.location.search;
