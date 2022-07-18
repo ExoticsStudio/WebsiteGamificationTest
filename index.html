@@ -117,14 +117,14 @@
 <!--Baris 1-->
             <div class="row">
                 <div class="col">
-                    <a href="./TigerCross/index.html" id="Game1" class="col"><img src="./img/TigerCross.png" alt=""></a>
+                    <a onclick="game1()" class="col"><img src="./img/TigerCross.png" alt=""></a>
                     <h4>Tiger Cross</h4>
                     <!--<p>belum ada ide kalimat guys wkwkwbelum ada ide kalimat guys wkwkw</p>-->
                      
                 </div>
 
                 <div class="col">
-                    <a href="./Mancing2/index.html" id="Game2" class="col"><img src="./img/SaveOurSea.png" alt=""></a>
+                    <a onclick="game2()" id="Game2" class="col"><img src="./img/SaveOurSea.png" alt=""></a>
                     <h4>Save Our Sea</h4>
                     <!--<p>belum ada ide kalimat guys wkwkwbelum ada ide kalimat guys wkwkw</p>-->
                     <!--<a href="#" class="ctn">PLAY SAVE OUR SEA</a>-->
@@ -133,14 +133,14 @@
 <!--Baris 2-->
             <div class="row">
                 <div class="col">
-                    <a href="./SpaceDefender/index.html" id="Game3" class="col"><img src="./img/SpaceDefender.png" alt=""></a>
+                    <a onclick="game3()" id="Game3" class="col"><img src="./img/SpaceDefender.png" alt=""></a>
                     <h4>SPACE DEFENDER</h4>
                     <!--<p>belum ada ide kalimat guys wkwkwbelum ada ide kalimat guys wkwkw</p>-->
                      <!--<a href="#" class="ctn">PLAY SAVE OUR SEA</a>-->
                 </div>
 
                 <div class="col">
-                    <a href="./VehiclePicker/index.html" id="Game4" class="col"><img src="./img/VehiclePicker.png" alt=""></a>
+                    <a onclick="game4()" id="Game4" class="col"><img src="./img/VehiclePicker.png" alt=""></a>
                     <h4>VEHICLE PICKER</h4>
                     <!--<p>belum ada ide kalimat guys wkwkwbelum ada ide kalimat guys wkwkw</p>-->
                      <!--<a href="#" class="ctn">PLAY SAVE OUR SEA</a>-->
@@ -149,14 +149,14 @@
 <!--Baris 3-->
             <div class="row">
                 <div class="col">
-                    <a href="./LeasingFrenzy2/index.html" id="Game5" class="col"><img src="./img/LeasingFrenzy.png" alt=""></a>
+                    <a onclick="game5()" id="Game5" class="col"><img src="./img/LeasingFrenzy.png" alt=""></a>
                     <h4>LEASING FRENZY</h4>
                     <!--<p>belum ada ide kalimat guys wkwkwbelum ada ide kalimat guys wkwkw</p>-->
                      <!--<a href="#" class="ctn">PLAY SAVE OUR SEA</a>-->
                 </div>
 
                 <div class="col">
-                    <a href="./KangParkir2/index.html" id="Game6" class="col"><img src="./img/KangParkir.png" alt=""></a>
+                    <a onclick="game6()" id="Game6" class="col"><img src="./img/KangParkir.png" alt=""></a>
                     <h4>KANG PARKIR</h4>
                     <!--<p>belum ada ide kalimat guys wkwkwbelum ada ide kalimat guys wkwkw</p>-->
                      <!--<a href="#" class="ctn">PLAY SAVE OUR SEA</a>-->
@@ -217,7 +217,7 @@
 
 
             
-
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             //Check Mobile
              
           /* let details = navigator.userAgent;
@@ -234,11 +234,33 @@
                     window.location.replace("https://gamificationtestingwebsite.netlify.app/Dekstop.html");
                  }*/
                  
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+                 //INPUT PARAMETER
+
+                var inputCustomerID = prompt("Input your customer ID: ");
+                 console.log(inputCustomerID);
+                
+                /* window.location.search = '?customerID='+ inputCustomerID;*/
+
+
+                 var url = window.location.href;    
+                    if (url.indexOf('?') > -1){
+                         url += '&param=' + inputCustomerID
+                        }else{
+                         url += '?param=' + inputCustomerID
+                        }
+                    window.location.href = url;
+           
+              
+
                  /*Get Current URL*/
                  function getURL() {
                 alert("The URL of this page is: " + window.location.href);
                 }
 
+                alert(getURL());
                 /*Get Current URL Parameter*/
                 
                 const queryString = window.location.search;
@@ -249,31 +271,48 @@
                 const urlParams = new URLSearchParams(queryString);
                 console.log("Apakah ContractID ada? " + urlParams.has('contractID'));
                 console.log("Apakah UserUD ada? "+ urlParams.has('UserID'));
+
                 const ContractID = urlParams.get('contractID');
+                const UserID = urlParams.get('UserID');
+              
+                
+                
                 console.log("Mengambil ContractID dari Parameter :" + ContractID);
-
-                /*append test
-                queryString.append('contractID',ContractID)
-                console.log(queryString);*/
-                var changeTarget = document.getElementById('game1');
-                var params = window.location.search;
-                var _href = changeTarget.href;
-
-                if(params){
-                    changeTarget.href = _href+params;
-                    console.log("url params = " + params);
-                    console.log("Berhasil");
-                }
-                else
-                {
-                    console.log("Gagal");
+                console.log("Mengambil UserID dari Parameter :" + UserID);
+        
+                //tigercross
+                function game1(){
+                    window.location.href = "https://gamificationtestingwebsite.netlify.app/tigercross/?customerID=" + UserID;
                 }
 
+                //mancing
+                function game2(){
+                    window.location.href = "https://gamificationtestingwebsite.netlify.app/mancing2/?customerID=" + UserID;
+                }
 
+                //spacedefender
+                function game3(){
+                    window.location.href = "https://gamificationtestingwebsite.netlify.app/spacedefender/?customerID=" + UserID;
+                }
+
+                //vehiclepicker
+                function game4(){
+                    window.location.href = "https://gamificationtestingwebsite.netlify.app/vehiclepicker/?customerID=" + UserID;
+                }
+
+                //leasing frenzy
+                function game5(){
+                    window.location.href = "https://gamificationtestingwebsite.netlify.app/leasingfrenzy2/?customerID=" + UserID;
+                }
+
+                //kang parkir
+                function game6(){
+                    window.location.href = "https://gamificationtestingwebsite.netlify.app/kangparkir2/?customerID=" + UserID;
+                }
         </script>
 
 
-            <button type="button" onclick="getURL();">Get Page URL</button>
+           <!-- <button type="button" onclick="getURL();">Get Page URL</button>-->
 
 
     </body>
