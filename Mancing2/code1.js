@@ -279,7 +279,7 @@ gdjs.copyArray(runtimeScene.getObjects("YourScore"), gdjs.GameoverCode.GDYourSco
 };gdjs.GameoverCode.mapOfGDgdjs_46GameoverCode_46GDRestartObjects3Objects = Hashtable.newFrom({"Restart": gdjs.GameoverCode.GDRestartObjects3});
 gdjs.GameoverCode.mapOfGDgdjs_46GameoverCode_46GDRestartObjects3Objects = Hashtable.newFrom({"Restart": gdjs.GameoverCode.GDRestartObjects3});
 gdjs.GameoverCode.mapOfGDgdjs_46GameoverCode_46GDRestartObjects2Objects = Hashtable.newFrom({"Restart": gdjs.GameoverCode.GDRestartObjects2});
-gdjs.GameoverCode.asyncCallback10733700 = function (runtimeScene, asyncObjectsList) {
+gdjs.GameoverCode.asyncCallback10867996 = function (runtimeScene, asyncObjectsList) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Gameplay", false);
 }}
 gdjs.GameoverCode.eventsList2 = function(runtimeScene) {
@@ -290,7 +290,7 @@ gdjs.GameoverCode.eventsList2 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.25), (runtimeScene) => (gdjs.GameoverCode.asyncCallback10733700(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.25), (runtimeScene) => (gdjs.GameoverCode.asyncCallback10867996(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -402,7 +402,7 @@ for(var i = 0, k = 0, l = gdjs.GameoverCode.GDNewBestScoreObjects3.length;i<l;++
 gdjs.GameoverCode.GDNewBestScoreObjects3.length = k;}if ( gdjs.GameoverCode.condition0IsTrue_0.val ) {
 {
 {gdjs.GameoverCode.conditionTrue_1 = gdjs.GameoverCode.condition1IsTrue_0;
-gdjs.GameoverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10715428);
+gdjs.GameoverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10885108);
 }
 }}
 if (gdjs.GameoverCode.condition1IsTrue_0.val) {
@@ -432,7 +432,7 @@ for(var i = 0, k = 0, l = gdjs.GameoverCode.GDNewBestScoreObjects2.length;i<l;++
 gdjs.GameoverCode.GDNewBestScoreObjects2.length = k;}if ( gdjs.GameoverCode.condition0IsTrue_0.val ) {
 {
 {gdjs.GameoverCode.conditionTrue_1 = gdjs.GameoverCode.condition1IsTrue_0;
-gdjs.GameoverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10729820);
+gdjs.GameoverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10858324);
 }
 }}
 if (gdjs.GameoverCode.condition1IsTrue_0.val) {
@@ -464,7 +464,7 @@ for(var i = 0, k = 0, l = gdjs.GameoverCode.GDFishTextObjects2.length;i<l;++i) {
 gdjs.GameoverCode.GDFishTextObjects2.length = k;}if ( gdjs.GameoverCode.condition0IsTrue_0.val ) {
 {
 {gdjs.GameoverCode.conditionTrue_1 = gdjs.GameoverCode.condition1IsTrue_0;
-gdjs.GameoverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10704788);
+gdjs.GameoverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10882220);
 }
 }}
 if (gdjs.GameoverCode.condition1IsTrue_0.val) {
@@ -626,7 +626,7 @@ for(var i = 0, k = 0, l = gdjs.GameoverCode.GDFishTextObjects2.length;i<l;++i) {
 gdjs.GameoverCode.GDFishTextObjects2.length = k;}if ( gdjs.GameoverCode.condition0IsTrue_0.val ) {
 {
 {gdjs.GameoverCode.conditionTrue_1 = gdjs.GameoverCode.condition1IsTrue_0;
-gdjs.GameoverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10712596);
+gdjs.GameoverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10862580);
 }
 }}
 if (gdjs.GameoverCode.condition1IsTrue_0.val) {
@@ -647,7 +647,7 @@ gdjs.GameoverCode.eventsList10 = function(runtimeScene) {
 gdjs.GameoverCode.condition0IsTrue_0.val = false;
 {
 {gdjs.GameoverCode.conditionTrue_1 = gdjs.GameoverCode.condition0IsTrue_0;
-gdjs.GameoverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10675484);
+gdjs.GameoverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10830508);
 }
 }if (gdjs.GameoverCode.condition0IsTrue_0.val) {
 {gdjs.evtTools.network.sendAsyncRequest("https://localhost:44312/api/Gamification2022/Gamification/UpdateFishing", "{ \"username\": " + gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getGame().getVariables().get("Username")) + ",\n   \"score\": " + gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getGame().getVariables().get("TotalHighScore")) + ",\n   \"Highscore\": " + gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getVariables().get("LoadedScore")) + " \n }", "POST", "application/json", runtimeScene.getVariables().get("Return_Temp"), gdjs.VariablesContainer.badVariable);
@@ -680,7 +680,7 @@ gdjs.GameoverCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPres
 }if ( gdjs.GameoverCode.condition1IsTrue_0.val ) {
 {
 {gdjs.GameoverCode.conditionTrue_1 = gdjs.GameoverCode.condition2IsTrue_0;
-gdjs.GameoverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10721252);
+gdjs.GameoverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10877412);
 }
 }}
 }
