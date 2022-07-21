@@ -238,25 +238,25 @@
 
 
                  //INPUT PARAMETER
-               var inputUsername = prompt("Input your Username: ")
-               var inputCustomerID = prompt("Input your CustomerID: ");
+               //var inputUsername = prompt("Input your Username: ")
+              // var inputCustomerID = prompt("Input your CustomerID: ");
 
-               console.log("Hasil Input Username: " + inputUsername);
-               console.log("Hasil Input CustomerID: " + inputCustomerID);
+               //console.log("Hasil Input Username: " + inputUsername);
+               //console.log("Hasil Input CustomerID: " + inputCustomerID);
 
             //masukan input ke variable
-               const UserNameID = inputUsername;
+               //const UserNameID = inputUsername;
                console.log("Transfer input ke variable berhasil");
             
             
               
 
                 // Get Current URL
-                /* function getURL() {
+                 function getURL() {
                 alert("The URL of this page is: " + window.location.href);
-                }*/
+                }
 
-               // alert(getURL());
+               alert(getURL());
 
                 /*Get Current URL Parameter*/
                 
@@ -267,52 +267,55 @@
                 const urlParams = new URLSearchParams(queryString);
                 console.log("Apakah ContractID ada? " + urlParams.has('contractID'));
                 console.log("Apakah CustomerID ada? "+ urlParams.has('customerID'));
+                console.log("Apakah usernameID ada? "+ urlParams.has('usernameID'));
 
                 //Tarik data dari parameter
                 const ContractID = urlParams.get('contractID');
-               // const UserID = urlParams.get('customerID');
+                const customerID = urlParams.get('customerID');
+                const UserNameID = urlParams.get('usernameID');
 
                 //Test input data masuk ke game
-                const UserID = inputCustomerID;
+                //const UserID = inputCustomerID;
                
 
               
                 
                 
                 console.log("Mengambil ContractID dari Parameter :" + ContractID);
-                console.log("Mengambil customerID dari Parameter :" + UserID);
+                console.log("Mengambil customerID dari Parameter :" + customerID);
+                console.log("Mengambil usernameID dari Parameter :" + UserNameID);
         
                 //tigercross
                 function game1(){
-                    //window.location.href = "http://10.1.99.120:8814/TigerCross/?customerID=" + UserID + "&username=" + UserNameID;
-                    window.location.href = "https://gamificationtestingwebsite.netlify.app/tigercross/?customerID=" + UserID + "&username=" + UserNameID;
+                    window.location.href = "http://10.1.99.120:8814/TigerCross/?customerID=" + customerID + "&username=" + UserNameID;
+                    //window.location.href = "https://gamificationtestingwebsite.netlify.app/tigercross/?customerID=" + UserID + "&username=" + UserNameID;
                 }
 
                 
 
                 //mancing
                 function game2(){
-                    window.location.href = "http://10.1.99.120:8814/Mancing2/?customerID=" + UserID + "&username=" + UserNameID;
+                    window.location.href = "http://10.1.99.120:8814/Mancing2/?customerID=" + customerID + "&username=" + UserNameID;
                 }
 
                 //spacedefender
                 function game3(){
-                    window.location.href = "http://10.1.99.120:8814/SpaceDefender/?customerID=" + UserID + "&username=" + UserNameID;
+                    window.location.href = "http://10.1.99.120:8814/SpaceDefender/?customerID=" + customerID + "&username=" + UserNameID;
                 }
 
                 //vehiclepicker
                 function game4(){
-                    window.location.href = "http://10.1.99.120:8814/VehiclePicker/?customerID=" + UserID + "&username=" + UserNameID;
+                    window.location.href = "http://10.1.99.120:8814/VehiclePicker/?customerID=" + customerID + "&username=" + UserNameID;
                 }
 
                 //leasing frenzy
                 function game5(){
-                    window.location.href = "http://10.1.99.120:8814/LeasingFrenzy2/?customerID=" + UserID + "&username=" + UserNameID;
+                    window.location.href = "http://10.1.99.120:8814/LeasingFrenzy2/?customerID=" + customerID + "&username=" + UserNameID;
                 }
 
                 //kang parkir
                 function game6(){
-                    window.location.href = "http://10.1.99.120:8814/KangParkir2/?customerID=" + UserID + "&username=" + UserNameID;
+                    window.location.href = "http://10.1.99.120:8814/KangParkir2/?customerID=" + customerID + "&username=" + UserNameID;
                 }
         </script>
 
