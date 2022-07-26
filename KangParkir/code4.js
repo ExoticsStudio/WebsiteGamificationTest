@@ -62,6 +62,16 @@ gdjs.Stage4Code.GDGamePausedText2Objects2= [];
 gdjs.Stage4Code.GDGamePausedText2Objects3= [];
 gdjs.Stage4Code.GDGamePausedText2Objects4= [];
 gdjs.Stage4Code.GDGamePausedText2Objects5= [];
+gdjs.Stage4Code.GDTimerObjects1= [];
+gdjs.Stage4Code.GDTimerObjects2= [];
+gdjs.Stage4Code.GDTimerObjects3= [];
+gdjs.Stage4Code.GDTimerObjects4= [];
+gdjs.Stage4Code.GDTimerObjects5= [];
+gdjs.Stage4Code.GDStageClearedObjects1= [];
+gdjs.Stage4Code.GDStageClearedObjects2= [];
+gdjs.Stage4Code.GDStageClearedObjects3= [];
+gdjs.Stage4Code.GDStageClearedObjects4= [];
+gdjs.Stage4Code.GDStageClearedObjects5= [];
 gdjs.Stage4Code.GDRoadRightObjects1= [];
 gdjs.Stage4Code.GDRoadRightObjects2= [];
 gdjs.Stage4Code.GDRoadRightObjects3= [];
@@ -122,16 +132,6 @@ gdjs.Stage4Code.GDDecorObjects2= [];
 gdjs.Stage4Code.GDDecorObjects3= [];
 gdjs.Stage4Code.GDDecorObjects4= [];
 gdjs.Stage4Code.GDDecorObjects5= [];
-gdjs.Stage4Code.GDTimerObjects1= [];
-gdjs.Stage4Code.GDTimerObjects2= [];
-gdjs.Stage4Code.GDTimerObjects3= [];
-gdjs.Stage4Code.GDTimerObjects4= [];
-gdjs.Stage4Code.GDTimerObjects5= [];
-gdjs.Stage4Code.GDStageClearedObjects1= [];
-gdjs.Stage4Code.GDStageClearedObjects2= [];
-gdjs.Stage4Code.GDStageClearedObjects3= [];
-gdjs.Stage4Code.GDStageClearedObjects4= [];
-gdjs.Stage4Code.GDStageClearedObjects5= [];
 gdjs.Stage4Code.GDNewTextObjects1= [];
 gdjs.Stage4Code.GDNewTextObjects2= [];
 gdjs.Stage4Code.GDNewTextObjects3= [];
@@ -553,7 +553,7 @@ for(var i = 0, k = 0, l = gdjs.Stage4Code.GDLoadingObjects3.length;i<l;++i) {
 gdjs.Stage4Code.GDLoadingObjects3.length = k;}if ( gdjs.Stage4Code.condition0IsTrue_0.val ) {
 {
 {gdjs.Stage4Code.conditionTrue_1 = gdjs.Stage4Code.condition1IsTrue_0;
-gdjs.Stage4Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(13247476);
+gdjs.Stage4Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(140648020);
 }
 }}
 if (gdjs.Stage4Code.condition1IsTrue_0.val) {
@@ -588,7 +588,7 @@ for(var i = 0, k = 0, l = gdjs.Stage4Code.GDLoadingObjects2.length;i<l;++i) {
 gdjs.Stage4Code.GDLoadingObjects2.length = k;}if ( gdjs.Stage4Code.condition0IsTrue_0.val ) {
 {
 {gdjs.Stage4Code.conditionTrue_1 = gdjs.Stage4Code.condition1IsTrue_0;
-gdjs.Stage4Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(13250324);
+gdjs.Stage4Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(140714892);
 }
 }}
 if (gdjs.Stage4Code.condition1IsTrue_0.val) {
@@ -626,7 +626,7 @@ gdjs.Stage4Code.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPresse
 }if ( gdjs.Stage4Code.condition1IsTrue_0.val ) {
 {
 {gdjs.Stage4Code.conditionTrue_1 = gdjs.Stage4Code.condition2IsTrue_0;
-gdjs.Stage4Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(13246652);
+gdjs.Stage4Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(140639252);
 }
 }}
 }
@@ -1261,7 +1261,7 @@ for(var i = 0, k = 0, l = gdjs.Stage4Code.GDCarObjects2.length;i<l;++i) {
 gdjs.Stage4Code.GDCarObjects2.length = k;}if ( gdjs.Stage4Code.condition0IsTrue_0.val ) {
 {
 {gdjs.Stage4Code.conditionTrue_1 = gdjs.Stage4Code.condition1IsTrue_0;
-gdjs.Stage4Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(13271292);
+gdjs.Stage4Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(141195228);
 }
 }}
 if (gdjs.Stage4Code.condition1IsTrue_0.val) {
@@ -1323,7 +1323,7 @@ for(var i = 0, k = 0, l = gdjs.Stage4Code.GDCarObjects1.length;i<l;++i) {
 gdjs.Stage4Code.GDCarObjects1.length = k;}if ( gdjs.Stage4Code.condition1IsTrue_0.val ) {
 {
 {gdjs.Stage4Code.conditionTrue_1 = gdjs.Stage4Code.condition2IsTrue_0;
-gdjs.Stage4Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(13272532);
+gdjs.Stage4Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(141202188);
 }
 }}
 }
@@ -1406,7 +1406,7 @@ for(var i = 0, len = gdjs.Stage4Code.GDGamePausedText2Objects3.length ;i < len;+
 }
 
 
-};gdjs.Stage4Code.asyncCallback13275452 = function (runtimeScene, asyncObjectsList) {
+};gdjs.Stage4Code.asyncCallback141238428 = function (runtimeScene, asyncObjectsList) {
 
 { //Subevents
 gdjs.Stage4Code.eventsList25(runtimeScene, asyncObjectsList);} //End of subevents
@@ -1420,7 +1420,7 @@ gdjs.Stage4Code.eventsList26 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 for (const obj of gdjs.Stage4Code.GDPauseResumeButtonObjects2) asyncObjectsList.addObject("PauseResumeButton", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.1), (runtimeScene) => (gdjs.Stage4Code.asyncCallback13275452(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.1), (runtimeScene) => (gdjs.Stage4Code.asyncCallback141238428(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -1448,7 +1448,7 @@ gdjs.Stage4Code.condition2IsTrue_0.val = gdjs.evtTools.input.isMouseButtonReleas
 }if ( gdjs.Stage4Code.condition2IsTrue_0.val ) {
 {
 {gdjs.Stage4Code.conditionTrue_1 = gdjs.Stage4Code.condition3IsTrue_0;
-gdjs.Stage4Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(13275028);
+gdjs.Stage4Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(141237716);
 }
 }}
 }
@@ -1507,7 +1507,7 @@ for(var i = 0, len = gdjs.Stage4Code.GDGamePausedText2Objects3.length ;i < len;+
 }
 
 
-};gdjs.Stage4Code.asyncCallback13279900 = function (runtimeScene, asyncObjectsList) {
+};gdjs.Stage4Code.asyncCallback141306652 = function (runtimeScene, asyncObjectsList) {
 
 { //Subevents
 gdjs.Stage4Code.eventsList28(runtimeScene, asyncObjectsList);} //End of subevents
@@ -1521,7 +1521,7 @@ gdjs.Stage4Code.eventsList29 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 for (const obj of gdjs.Stage4Code.GDPauseResumeButtonObjects2) asyncObjectsList.addObject("PauseResumeButton", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.1), (runtimeScene) => (gdjs.Stage4Code.asyncCallback13279900(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.1), (runtimeScene) => (gdjs.Stage4Code.asyncCallback141306652(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -1549,7 +1549,7 @@ gdjs.Stage4Code.condition2IsTrue_0.val = gdjs.evtTools.input.isMouseButtonReleas
 }if ( gdjs.Stage4Code.condition2IsTrue_0.val ) {
 {
 {gdjs.Stage4Code.conditionTrue_1 = gdjs.Stage4Code.condition3IsTrue_0;
-gdjs.Stage4Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(13279476);
+gdjs.Stage4Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(141303908);
 }
 }}
 }
@@ -1576,7 +1576,7 @@ gdjs.Stage4Code.eventsList31 = function(runtimeScene, asyncObjectsList) {
 }
 
 
-};gdjs.Stage4Code.asyncCallback13241476 = function (runtimeScene, asyncObjectsList) {
+};gdjs.Stage4Code.asyncCallback141400540 = function (runtimeScene, asyncObjectsList) {
 
 { //Subevents
 gdjs.Stage4Code.eventsList31(runtimeScene, asyncObjectsList);} //End of subevents
@@ -1589,7 +1589,7 @@ gdjs.Stage4Code.eventsList32 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.1), (runtimeScene) => (gdjs.Stage4Code.asyncCallback13241476(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.1), (runtimeScene) => (gdjs.Stage4Code.asyncCallback141400540(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -1617,7 +1617,7 @@ gdjs.Stage4Code.condition2IsTrue_0.val = gdjs.evtTools.input.isMouseButtonReleas
 }if ( gdjs.Stage4Code.condition2IsTrue_0.val ) {
 {
 {gdjs.Stage4Code.conditionTrue_1 = gdjs.Stage4Code.condition3IsTrue_0;
-gdjs.Stage4Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(13244124);
+gdjs.Stage4Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(141379364);
 }
 }}
 }
@@ -1690,7 +1690,7 @@ gdjs.copyArray(gdjs.Stage4Code.GDLoadingObjects3_1final, gdjs.Stage4Code.GDLoadi
 }if ( gdjs.Stage4Code.condition0IsTrue_0.val ) {
 {
 {gdjs.Stage4Code.conditionTrue_1 = gdjs.Stage4Code.condition1IsTrue_0;
-gdjs.Stage4Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(13195516);
+gdjs.Stage4Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(141416868);
 }
 }}
 if (gdjs.Stage4Code.condition1IsTrue_0.val) {
@@ -1763,7 +1763,7 @@ if( gdjs.Stage4Code.condition1IsTrue_1.val ) {
 }if ( gdjs.Stage4Code.condition0IsTrue_0.val ) {
 {
 {gdjs.Stage4Code.conditionTrue_1 = gdjs.Stage4Code.condition1IsTrue_0;
-gdjs.Stage4Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(13222996);
+gdjs.Stage4Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(141592964);
 }
 }}
 if (gdjs.Stage4Code.condition1IsTrue_0.val) {
@@ -1835,7 +1835,7 @@ if( gdjs.Stage4Code.condition1IsTrue_1.val ) {
 }if ( gdjs.Stage4Code.condition0IsTrue_0.val ) {
 {
 {gdjs.Stage4Code.conditionTrue_1 = gdjs.Stage4Code.condition1IsTrue_0;
-gdjs.Stage4Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(13272604);
+gdjs.Stage4Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(141698436);
 }
 }}
 if (gdjs.Stage4Code.condition1IsTrue_0.val) {
@@ -1868,7 +1868,7 @@ gdjs.Stage4Code.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBeg
 }if ( gdjs.Stage4Code.condition0IsTrue_0.val ) {
 {
 {gdjs.Stage4Code.conditionTrue_1 = gdjs.Stage4Code.condition1IsTrue_0;
-gdjs.Stage4Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(13229300);
+gdjs.Stage4Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(141719332);
 }
 }}
 if (gdjs.Stage4Code.condition1IsTrue_0.val) {
@@ -1898,7 +1898,7 @@ for(var i = 0, k = 0, l = gdjs.Stage4Code.GDTutorialTextObjects3.length;i<l;++i)
 gdjs.Stage4Code.GDTutorialTextObjects3.length = k;}if ( gdjs.Stage4Code.condition0IsTrue_0.val ) {
 {
 {gdjs.Stage4Code.conditionTrue_1 = gdjs.Stage4Code.condition1IsTrue_0;
-gdjs.Stage4Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(13229540);
+gdjs.Stage4Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(141729164);
 }
 }}
 if (gdjs.Stage4Code.condition1IsTrue_0.val) {
@@ -1928,7 +1928,7 @@ for(var i = 0, k = 0, l = gdjs.Stage4Code.GDTutorialTextObjects3.length;i<l;++i)
 gdjs.Stage4Code.GDTutorialTextObjects3.length = k;}if ( gdjs.Stage4Code.condition0IsTrue_0.val ) {
 {
 {gdjs.Stage4Code.conditionTrue_1 = gdjs.Stage4Code.condition1IsTrue_0;
-gdjs.Stage4Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(13276116);
+gdjs.Stage4Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(141724284);
 }
 }}
 if (gdjs.Stage4Code.condition1IsTrue_0.val) {
@@ -1951,7 +1951,7 @@ gdjs.Stage4Code.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableBoole
 }if ( gdjs.Stage4Code.condition0IsTrue_0.val ) {
 {
 {gdjs.Stage4Code.conditionTrue_1 = gdjs.Stage4Code.condition1IsTrue_0;
-gdjs.Stage4Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(13276484);
+gdjs.Stage4Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(141744460);
 }
 }}
 if (gdjs.Stage4Code.condition1IsTrue_0.val) {
@@ -1967,7 +1967,7 @@ gdjs.copyArray(runtimeScene.getObjects("TutorialText"), gdjs.Stage4Code.GDTutori
 };gdjs.Stage4Code.mapOfGDgdjs_46Stage4Code_46GDHomeButtonObjects3Objects = Hashtable.newFrom({"HomeButton": gdjs.Stage4Code.GDHomeButtonObjects3});
 gdjs.Stage4Code.mapOfGDgdjs_46Stage4Code_46GDHomeButtonObjects3Objects = Hashtable.newFrom({"HomeButton": gdjs.Stage4Code.GDHomeButtonObjects3});
 gdjs.Stage4Code.mapOfGDgdjs_46Stage4Code_46GDHomeButtonObjects2Objects = Hashtable.newFrom({"HomeButton": gdjs.Stage4Code.GDHomeButtonObjects2});
-gdjs.Stage4Code.asyncCallback13289012 = function (runtimeScene, asyncObjectsList) {
+gdjs.Stage4Code.asyncCallback141815932 = function (runtimeScene, asyncObjectsList) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "TitleScreen", false);
 }}
 gdjs.Stage4Code.eventsList40 = function(runtimeScene) {
@@ -1978,7 +1978,7 @@ gdjs.Stage4Code.eventsList40 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.25), (runtimeScene) => (gdjs.Stage4Code.asyncCallback13289012(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.25), (runtimeScene) => (gdjs.Stage4Code.asyncCallback141815932(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -2088,7 +2088,7 @@ for(var i = 0, k = 0, l = gdjs.Stage4Code.GDPauseResumeButtonObjects3.length;i<l
 gdjs.Stage4Code.GDPauseResumeButtonObjects3.length = k;}if ( gdjs.Stage4Code.condition0IsTrue_0.val ) {
 {
 {gdjs.Stage4Code.conditionTrue_1 = gdjs.Stage4Code.condition1IsTrue_0;
-gdjs.Stage4Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(13291060);
+gdjs.Stage4Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(141844684);
 }
 }}
 if (gdjs.Stage4Code.condition1IsTrue_0.val) {
@@ -2190,7 +2190,7 @@ for(var i = 0, k = 0, l = gdjs.Stage4Code.GDPauseResumeButtonObjects2.length;i<l
 gdjs.Stage4Code.GDPauseResumeButtonObjects2.length = k;}if ( gdjs.Stage4Code.condition0IsTrue_0.val ) {
 {
 {gdjs.Stage4Code.conditionTrue_1 = gdjs.Stage4Code.condition1IsTrue_0;
-gdjs.Stage4Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(13295700);
+gdjs.Stage4Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(141928004);
 }
 }}
 if (gdjs.Stage4Code.condition1IsTrue_0.val) {
@@ -2482,6 +2482,16 @@ gdjs.Stage4Code.GDGamePausedText2Objects2.length = 0;
 gdjs.Stage4Code.GDGamePausedText2Objects3.length = 0;
 gdjs.Stage4Code.GDGamePausedText2Objects4.length = 0;
 gdjs.Stage4Code.GDGamePausedText2Objects5.length = 0;
+gdjs.Stage4Code.GDTimerObjects1.length = 0;
+gdjs.Stage4Code.GDTimerObjects2.length = 0;
+gdjs.Stage4Code.GDTimerObjects3.length = 0;
+gdjs.Stage4Code.GDTimerObjects4.length = 0;
+gdjs.Stage4Code.GDTimerObjects5.length = 0;
+gdjs.Stage4Code.GDStageClearedObjects1.length = 0;
+gdjs.Stage4Code.GDStageClearedObjects2.length = 0;
+gdjs.Stage4Code.GDStageClearedObjects3.length = 0;
+gdjs.Stage4Code.GDStageClearedObjects4.length = 0;
+gdjs.Stage4Code.GDStageClearedObjects5.length = 0;
 gdjs.Stage4Code.GDRoadRightObjects1.length = 0;
 gdjs.Stage4Code.GDRoadRightObjects2.length = 0;
 gdjs.Stage4Code.GDRoadRightObjects3.length = 0;
@@ -2542,16 +2552,6 @@ gdjs.Stage4Code.GDDecorObjects2.length = 0;
 gdjs.Stage4Code.GDDecorObjects3.length = 0;
 gdjs.Stage4Code.GDDecorObjects4.length = 0;
 gdjs.Stage4Code.GDDecorObjects5.length = 0;
-gdjs.Stage4Code.GDTimerObjects1.length = 0;
-gdjs.Stage4Code.GDTimerObjects2.length = 0;
-gdjs.Stage4Code.GDTimerObjects3.length = 0;
-gdjs.Stage4Code.GDTimerObjects4.length = 0;
-gdjs.Stage4Code.GDTimerObjects5.length = 0;
-gdjs.Stage4Code.GDStageClearedObjects1.length = 0;
-gdjs.Stage4Code.GDStageClearedObjects2.length = 0;
-gdjs.Stage4Code.GDStageClearedObjects3.length = 0;
-gdjs.Stage4Code.GDStageClearedObjects4.length = 0;
-gdjs.Stage4Code.GDStageClearedObjects5.length = 0;
 gdjs.Stage4Code.GDNewTextObjects1.length = 0;
 gdjs.Stage4Code.GDNewTextObjects2.length = 0;
 gdjs.Stage4Code.GDNewTextObjects3.length = 0;

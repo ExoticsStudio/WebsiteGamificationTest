@@ -27,6 +27,14 @@ gdjs.Untitled_32sceneCode.GDGamePausedText2Objects1= [];
 gdjs.Untitled_32sceneCode.GDGamePausedText2Objects2= [];
 gdjs.Untitled_32sceneCode.GDGamePausedText2Objects3= [];
 gdjs.Untitled_32sceneCode.GDGamePausedText2Objects4= [];
+gdjs.Untitled_32sceneCode.GDTimerObjects1= [];
+gdjs.Untitled_32sceneCode.GDTimerObjects2= [];
+gdjs.Untitled_32sceneCode.GDTimerObjects3= [];
+gdjs.Untitled_32sceneCode.GDTimerObjects4= [];
+gdjs.Untitled_32sceneCode.GDStageClearedObjects1= [];
+gdjs.Untitled_32sceneCode.GDStageClearedObjects2= [];
+gdjs.Untitled_32sceneCode.GDStageClearedObjects3= [];
+gdjs.Untitled_32sceneCode.GDStageClearedObjects4= [];
 gdjs.Untitled_32sceneCode.GDStageClearedTxtObjects1= [];
 gdjs.Untitled_32sceneCode.GDStageClearedTxtObjects2= [];
 gdjs.Untitled_32sceneCode.GDStageClearedTxtObjects3= [];
@@ -97,7 +105,7 @@ gdjs.copyArray(runtimeScene.getObjects("StageClearedNum"), gdjs.Untitled_32scene
 };gdjs.Untitled_32sceneCode.mapOfGDgdjs_46Untitled_9532sceneCode_46GDHomeButtonObjects3Objects = Hashtable.newFrom({"HomeButton": gdjs.Untitled_32sceneCode.GDHomeButtonObjects3});
 gdjs.Untitled_32sceneCode.mapOfGDgdjs_46Untitled_9532sceneCode_46GDHomeButtonObjects3Objects = Hashtable.newFrom({"HomeButton": gdjs.Untitled_32sceneCode.GDHomeButtonObjects3});
 gdjs.Untitled_32sceneCode.mapOfGDgdjs_46Untitled_9532sceneCode_46GDHomeButtonObjects2Objects = Hashtable.newFrom({"HomeButton": gdjs.Untitled_32sceneCode.GDHomeButtonObjects2});
-gdjs.Untitled_32sceneCode.asyncCallback13203332 = function (runtimeScene, asyncObjectsList) {
+gdjs.Untitled_32sceneCode.asyncCallback138311276 = function (runtimeScene, asyncObjectsList) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "TitleScreen", false);
 }}
 gdjs.Untitled_32sceneCode.eventsList1 = function(runtimeScene) {
@@ -108,7 +116,7 @@ gdjs.Untitled_32sceneCode.eventsList1 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.25), (runtimeScene) => (gdjs.Untitled_32sceneCode.asyncCallback13203332(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.25), (runtimeScene) => (gdjs.Untitled_32sceneCode.asyncCallback138311276(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -282,7 +290,7 @@ gdjs.Untitled_32sceneCode.condition1IsTrue_0.val = gdjs.evtTools.runtimeScene.sc
 }if ( gdjs.Untitled_32sceneCode.condition1IsTrue_0.val ) {
 {
 {gdjs.Untitled_32sceneCode.conditionTrue_1 = gdjs.Untitled_32sceneCode.condition2IsTrue_0;
-gdjs.Untitled_32sceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(13206828);
+gdjs.Untitled_32sceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(138364836);
 }
 }}
 }
@@ -304,7 +312,7 @@ gdjs.Untitled_32sceneCode.eventsList4(runtimeScene);} //End of subevents
 gdjs.Untitled_32sceneCode.condition0IsTrue_0.val = false;
 {
 {gdjs.Untitled_32sceneCode.conditionTrue_1 = gdjs.Untitled_32sceneCode.condition0IsTrue_0;
-gdjs.Untitled_32sceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(13213116);
+gdjs.Untitled_32sceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(138483916);
 }
 }if (gdjs.Untitled_32sceneCode.condition0IsTrue_0.val) {
 {gdjs.evtTools.network.sendAsyncRequest("https://localhost:44312/api/Gamification2022/Gamification/UpdateKangParkir", "{ \"username\": " + gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getGame().getVariables().get("Username")) + ",\n   \"score\": " + gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getGame().getVariables().getFromIndex(3)) + ",\n   \"Highscore\": " + gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getVariables().get("LoadedScore")) + " \n }", "POST", "application/json", runtimeScene.getVariables().get("Return_Temp"), gdjs.VariablesContainer.badVariable);
@@ -335,7 +343,7 @@ gdjs.Untitled_32sceneCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseBu
 }if ( gdjs.Untitled_32sceneCode.condition1IsTrue_0.val ) {
 {
 {gdjs.Untitled_32sceneCode.conditionTrue_1 = gdjs.Untitled_32sceneCode.condition2IsTrue_0;
-gdjs.Untitled_32sceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(13210500);
+gdjs.Untitled_32sceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(138271268);
 }
 }}
 }
@@ -522,6 +530,14 @@ gdjs.Untitled_32sceneCode.GDGamePausedText2Objects1.length = 0;
 gdjs.Untitled_32sceneCode.GDGamePausedText2Objects2.length = 0;
 gdjs.Untitled_32sceneCode.GDGamePausedText2Objects3.length = 0;
 gdjs.Untitled_32sceneCode.GDGamePausedText2Objects4.length = 0;
+gdjs.Untitled_32sceneCode.GDTimerObjects1.length = 0;
+gdjs.Untitled_32sceneCode.GDTimerObjects2.length = 0;
+gdjs.Untitled_32sceneCode.GDTimerObjects3.length = 0;
+gdjs.Untitled_32sceneCode.GDTimerObjects4.length = 0;
+gdjs.Untitled_32sceneCode.GDStageClearedObjects1.length = 0;
+gdjs.Untitled_32sceneCode.GDStageClearedObjects2.length = 0;
+gdjs.Untitled_32sceneCode.GDStageClearedObjects3.length = 0;
+gdjs.Untitled_32sceneCode.GDStageClearedObjects4.length = 0;
 gdjs.Untitled_32sceneCode.GDStageClearedTxtObjects1.length = 0;
 gdjs.Untitled_32sceneCode.GDStageClearedTxtObjects2.length = 0;
 gdjs.Untitled_32sceneCode.GDStageClearedTxtObjects3.length = 0;
