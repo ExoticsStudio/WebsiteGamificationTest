@@ -17,7 +17,7 @@ gdjs.NotMobileCode.condition3IsTrue_1 = {val:false};
 
 
 gdjs.NotMobileCode.mapOfGDgdjs_46NotMobileCode_46GDDownloadObjects1Objects = Hashtable.newFrom({"Download": gdjs.NotMobileCode.GDDownloadObjects1});
-gdjs.NotMobileCode.asyncCallback11210388 = function (runtimeScene, asyncObjectsList) {
+gdjs.NotMobileCode.asyncCallback11249724 = function (runtimeScene, asyncObjectsList) {
 gdjs.copyArray(asyncObjectsList.getObjects("Download"), gdjs.NotMobileCode.GDDownloadObjects2);
 
 {for(var i = 0, len = gdjs.NotMobileCode.GDDownloadObjects2.length ;i < len;++i) {
@@ -34,7 +34,7 @@ gdjs.NotMobileCode.eventsList0 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 for (const obj of gdjs.NotMobileCode.GDDownloadObjects1) asyncObjectsList.addObject("Download", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.3), (runtimeScene) => (gdjs.NotMobileCode.asyncCallback11210388(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.3), (runtimeScene) => (gdjs.NotMobileCode.asyncCallback11249724(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -59,7 +59,7 @@ gdjs.NotMobileCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPre
 }if ( gdjs.NotMobileCode.condition1IsTrue_0.val ) {
 {
 {gdjs.NotMobileCode.conditionTrue_1 = gdjs.NotMobileCode.condition2IsTrue_0;
-gdjs.NotMobileCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11210068);
+gdjs.NotMobileCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11249404);
 }
 }}
 }

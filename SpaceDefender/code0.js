@@ -9,6 +9,8 @@ gdjs.SplashScreenCode.GDCurrentURLObjects1= [];
 gdjs.SplashScreenCode.GDCurrentURLObjects2= [];
 gdjs.SplashScreenCode.GDGetParamaterObjects1= [];
 gdjs.SplashScreenCode.GDGetParamaterObjects2= [];
+gdjs.SplashScreenCode.GDGetParamater2Objects1= [];
+gdjs.SplashScreenCode.GDGetParamater2Objects2= [];
 
 gdjs.SplashScreenCode.conditionTrue_0 = {val:false};
 gdjs.SplashScreenCode.condition0IsTrue_0 = {val:false};
@@ -16,6 +18,29 @@ gdjs.SplashScreenCode.condition1IsTrue_0 = {val:false};
 
 
 gdjs.SplashScreenCode.eventsList0 = function(runtimeScene) {
+
+{
+
+
+{
+gdjs.copyArray(runtimeScene.getObjects("CurrentURL"), gdjs.SplashScreenCode.GDCurrentURLObjects1);
+gdjs.copyArray(runtimeScene.getObjects("GetParamater"), gdjs.SplashScreenCode.GDGetParamaterObjects1);
+gdjs.copyArray(runtimeScene.getObjects("GetParamater2"), gdjs.SplashScreenCode.GDGetParamater2Objects1);
+{for(var i = 0, len = gdjs.SplashScreenCode.GDCurrentURLObjects1.length ;i < len;++i) {
+    gdjs.SplashScreenCode.GDCurrentURLObjects1[i].setString("Current URL =  " + gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().get("CurrentURL")));
+}
+}{for(var i = 0, len = gdjs.SplashScreenCode.GDGetParamaterObjects1.length ;i < len;++i) {
+    gdjs.SplashScreenCode.GDGetParamaterObjects1[i].setString("CustomerID = " + gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().get("Param_CustomerID")));
+}
+}{for(var i = 0, len = gdjs.SplashScreenCode.GDGetParamater2Objects1.length ;i < len;++i) {
+    gdjs.SplashScreenCode.GDGetParamater2Objects1[i].setString("Username = " + gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().get("Param_UsernameID")));
+}
+}}
+
+}
+
+
+};gdjs.SplashScreenCode.eventsList1 = function(runtimeScene) {
 
 {
 
@@ -111,9 +136,14 @@ gdjs.SplashScreenCode.condition0IsTrue_0.val = false;
 gdjs.SplashScreenCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 }if (gdjs.SplashScreenCode.condition0IsTrue_0.val) {
 {runtimeScene.getGame().getVariables().get("CurrentURL").setString(gdjs.evtsExt__URLTools__CurrentURL.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
-}{runtimeScene.getGame().getVariables().get("Param_ContractID").setString(gdjs.evtsExt__URLTools__URLQueryStringParameter.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().get("CurrentURL")), "ContractID", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
-}{runtimeScene.getGame().getVariables().get("Username").setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().get("Param_ContractID")));
-}}
+}{runtimeScene.getGame().getVariables().get("Param_CustomerID").setString(gdjs.evtsExt__URLTools__URLQueryStringParameter.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().get("CurrentURL")), "customerID", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
+}{runtimeScene.getGame().getVariables().get("Param_UsernameID").setString(gdjs.evtsExt__URLTools__URLQueryStringParameter.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().get("CurrentURL")), "username", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
+}{runtimeScene.getGame().getVariables().get("CustomerID").setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().get("Param_CustomerID")));
+}{runtimeScene.getGame().getVariables().get("Username").setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().get("Param_UsernameID")));
+}
+{ //Subevents
+gdjs.SplashScreenCode.eventsList0(runtimeScene);} //End of subevents
+}
 
 }
 
@@ -122,15 +152,7 @@ gdjs.SplashScreenCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJ
 
 
 {
-gdjs.copyArray(runtimeScene.getObjects("CurrentURL"), gdjs.SplashScreenCode.GDCurrentURLObjects1);
-gdjs.copyArray(runtimeScene.getObjects("GetParamater"), gdjs.SplashScreenCode.GDGetParamaterObjects1);
-{for(var i = 0, len = gdjs.SplashScreenCode.GDCurrentURLObjects1.length ;i < len;++i) {
-    gdjs.SplashScreenCode.GDCurrentURLObjects1[i].setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().get("CurrentURL")));
 }
-}{for(var i = 0, len = gdjs.SplashScreenCode.GDGetParamaterObjects1.length ;i < len;++i) {
-    gdjs.SplashScreenCode.GDGetParamaterObjects1[i].setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().get("Param_ContractID")));
-}
-}}
 
 }
 
@@ -150,8 +172,10 @@ gdjs.SplashScreenCode.GDCurrentURLObjects1.length = 0;
 gdjs.SplashScreenCode.GDCurrentURLObjects2.length = 0;
 gdjs.SplashScreenCode.GDGetParamaterObjects1.length = 0;
 gdjs.SplashScreenCode.GDGetParamaterObjects2.length = 0;
+gdjs.SplashScreenCode.GDGetParamater2Objects1.length = 0;
+gdjs.SplashScreenCode.GDGetParamater2Objects2.length = 0;
 
-gdjs.SplashScreenCode.eventsList0(runtimeScene);
+gdjs.SplashScreenCode.eventsList1(runtimeScene);
 return;
 
 }

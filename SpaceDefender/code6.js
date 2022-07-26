@@ -34,7 +34,7 @@ gdjs.CongratzCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPres
 }if ( gdjs.CongratzCode.condition1IsTrue_0.val ) {
 {
 {gdjs.CongratzCode.conditionTrue_1 = gdjs.CongratzCode.condition2IsTrue_0;
-gdjs.CongratzCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11205612);
+gdjs.CongratzCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11244948);
 }
 }}
 }

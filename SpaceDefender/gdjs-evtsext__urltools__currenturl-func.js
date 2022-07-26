@@ -11,7 +11,7 @@ gdjs.evtsExt__URLTools__CurrentURL.conditionTrue_0 = {val:false};
 gdjs.evtsExt__URLTools__CurrentURL.condition0IsTrue_0 = {val:false};
 
 
-gdjs.evtsExt__URLTools__CurrentURL.userFunc0xaec170 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__URLTools__CurrentURL.userFunc0x9c8178 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue = location.toString();
 
@@ -21,7 +21,7 @@ gdjs.evtsExt__URLTools__CurrentURL.eventsList0 = function(runtimeScene, eventsFu
 {
 
 
-gdjs.evtsExt__URLTools__CurrentURL.userFunc0xaec170(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__URLTools__CurrentURL.userFunc0x9c8178(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
